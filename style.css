@@ -41,8 +41,23 @@ ul {
 /* ---------- CUENTA REGRESIVA ---------- */
 
 #cuenta-regresiva {
-  
-  background-color: green;
+
+  margin: 5% 0 5% 0;
+}
+
+.sep {
+  height: 1px;
+  opacity: 1;
+  color: red;
+}
+
+.sep-titulo{ width: 25%; }
+.sep-final { width: 100%; }
+
+.typo-numeros {
+
+  font-size: 50pt;
+  text-align: center;
 }
 
 /* ---------- FECHAS ---------- */
