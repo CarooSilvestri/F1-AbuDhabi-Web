@@ -17,6 +17,7 @@ ul {
   height: 100vh;
   z-index: 1;
   top: 0;
+  display: none;
   left: 0;
 }
 
