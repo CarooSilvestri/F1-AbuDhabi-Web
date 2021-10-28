@@ -1,4 +1,94 @@
-*{
+* {
   padding: 0;
   margin: 0;
+}
+
+ul {
+
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+/* ---------- BARRA ---------- */
+.barra {
+
+  color: white;
+  background-color: #BA0E0E;
+  position: fixed;
+  height: 100vh;
+  text-align: center;
+}
+
+
+/* ---------- VIDEO INICIO ---------- */
+#video-inicio {
+
+  background-image: url(rsc/img/GIF\ F1.gif);
+  background-repeat: no-repeat;
+  width: 100vh;
+  height: 100vh;
+}
+
+
+/* ---------- CUENTA REGRESIVA ---------- */
+
+#cuenta-regresiva {
+  
+  background-color: green;
+}
+
+/* ---------- FECHAS ---------- */
+
+#fechas {
+  
+    background-color: blueviolet;
+}
+
+
+/* ---------- SINTONIZACIÓN ---------- */
+
+#sintonizacion {
+  
+  background-color: lawngreen;
+}
+
+
+/* ---------- VOTACIÓN ---------- */
+
+#votacion {
+  
+  background-color: pink;
+}
+
+/* ---------- NEXT SEASON ---------- */
+
+#sintonizacion {
+  
+  background-color: lawngreen;
+}
+
+/* ---------- SPONOSNRS ---------- */
+
+#sintonizacion {
+  
+  background-color: lawngreen;
+}
+
+/* ---------- FOOTER ---------- */
+
+#sintonizacion {
+  
+  background-color: lawngreen;
+}
+
+
+
+
+
+/* ---------- TICKETS ---------- */
+
+#sintonizacion {
+  
+  background-color: lawngreen;
 }

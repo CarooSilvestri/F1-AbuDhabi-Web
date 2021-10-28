@@ -18,82 +18,103 @@
     <link rel="icon" type="image/x-icon" href="rsc/img/logo-F1.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 <body>
 
-    <!-- VIDEO -->
-    <div class="overlay">
-        <div class="video-inicio">
-            <div class="logo-gp"></div>
-            <div class="txtoyflecha"></div>
+    <div class="container-fluid">
+
+        <!-- VIDEO -->
+        <div class="row">
+            <div class="col-12" id="video-inicio">
+                <div class="logo-gp"></div>
+                <div class="txtoyflecha"></div>
+            </div>
+        </div>
+      
+        <!-- BARRA / MENÚ -->
+        <div class="barra col-1">
+            <img src="rsc/img/logo-race.png" class="img-fluid">
+            <ul>
+                <li>FECHAS</li>
+                <li>VOTAR</li>
+                <li>PRÓXIMA TEMPORADA</li>
+                <li>TICKETS</li>
+            </ul>
+        </div> 
+
+        <!-- CUENTA REGRESIVA -->
+        <div id="cuenta-regresiva" class="row">
+            <div class="col-12">
+                <div class="d-flex">
+                    <hr class="col-2">
+                    <h1>CUENTA REGRESIVA</h1>
+                    <hr class="col-2">
+                </div>                
+                <p>00:00:00</p>
+                <hr class="col-7">
+            </div>
+        </div>
+        
+        
+
+        <!-- FECHAS -->
+        <div id="fechas" class="row">
+            <h1>FECHAS Y HORARIOS</h1>
+            <div class="dia"></div>
+            <div class="dia"></div>
+            <div class="dia"></div>
+            <div class="dia"></div>
+        </div>
+
+        <!-- SINTONIZACIÓN -->
+        <div id="sintonizacion" class="row">
+            <div class="titulo">
+                <h2>ubicacion</h2>
+                <h1>PARA VER LA CARRERA SINTONIZA</h1>
+            </div>
+            <div class="emisoras">
+                <img>
+                <img>
+                <img>
+            </div>
+        </div>
+
+        <!-- VOTACIÓN -->
+        <div id="votación" class="row">
+            <h3>Dos candidatos, un solo premio</h3>
+            <h1>¿QUIÉN GANARÁ EL CAMPEONATO?</h1>
+            <div class="imgs-votacion">
+                <img>
+                <img>
+            </div>
+        </div>
+        
+        <!-- TICKETS -->
+        <div id="tickets" class="row">
+            <h1>TICKETS</h1>
+            <div class="ticket-dia"></div>
+            <div class="ticket-dia"></div>
+            <div class="ticket-dia"></div>
+        </div>
+
+
+        <!-- PROXIMA TEMPORADA -->
+        <!-- ver? -->
+        <!-- SPONSORS -->
+        <div id="sponsors" class="row">
+
+
         </div>
     </div>
-
-    <!-- BARRA / MENÚ -->
-    <div class="menu">
-        <img>
-    </div>
-
-    <!-- CUENTA REGRESIVA -->
-    <div class="cuenta-regresiva">
-
-    </div>
-
-    <!-- FECHAS -->
-    <div class="fechas">
-        <h1>FECHAS Y HORARIOS</h1>
-        <div class="dia"></div>
-        <div class="dia"></div>
-        <div class="dia"></div>
-        <div class="dia"></div>
-    </div>
-
-    <!-- SINTONIZACIÓN -->
-    <div class="sintonizacion">
-        <div class="titulo">
-            <h2></h2>
-            <h1></h1>
-        </div>
-        <div class="emisoras">
-            <img>
-            <img>
-            <img>
-        </div>
-    </div>
-
-    <!-- VOTACIÓN -->
-    <div class="votación">
-        <h3></h3>
-        <h1></h1>
-        <div class="imgs-votacion">
-            <img>
-            <img>
-        </div>
-    </div>
-    
-    <!-- TICKETS -->
-    <div class="tickets">
-        <h1></h1>
-        <div class="ticket-dia"></div>
-        <div class="ticket-dia"></div>
-        <div class="ticket-dia"></div>
-    </div>
-    <!-- PROXIMA TEMPORADA -->
-    <!-- ver? -->
-    <!-- SPONSORS -->
-    <div class="sponsors">
-
-
-    </div>
-    
     <!-- FOOTER -->    
     <footer>
 
