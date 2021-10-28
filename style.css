@@ -11,20 +11,26 @@ ul {
 }
 
 /* ---------- BARRA ---------- */
-.barra {
+#barra {
 
-  color: white;
   background-color: #BA0E0E;
-  position: fixed;
   height: 100vh;
-  text-align: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
+
+.nav-link {
+
+  color: white;
+}
 
 /* ---------- VIDEO INICIO ---------- */
 #video-inicio {
 
   background-image: url(rsc/img/GIF\ F1.gif);
+  background-color: lightpink;
   background-repeat: no-repeat;
   width: 100vh;
   height: 100vh;
@@ -59,6 +65,50 @@ ul {
 #votacion {
   
   background-color: pink;
+}
+
+.Tarjetas {
+  height: auto;
+  width: 100%;
+  background-color: #ba0e0e;
+}
+
+.card {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 500px;
+
+  overflow: hidden;
+}
+.card img {
+  position: absolute;
+  object-fit: cover;
+  left: -40%;
+}
+
+.card2 {
+  position: absolute;
+  width: 100%;
+  bottom: -50%;
+  height: 100%;
+  background-color: white;
+  transform: skew(0deg, 10deg) translateY(40px);
+}
+.contenido {
+  margin-top: 10%;
+  transform: skew(0deg, -10deg);
+  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+}
+.boton{
+  padding: 10px;
+  font-size: 130px;
+  position: absolute;
+  background-color: #ba0e0e;
+  z-index: 1000;
+  transform: scale(0.5,0.35) translateY(80px);
 }
 
 /* ---------- NEXT SEASON ---------- */
