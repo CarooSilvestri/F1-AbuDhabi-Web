@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Titillium Web', serif;
+  font-weight: bold;
+}
+
+/* FUENTES */
+@font-face {
+  font-family: 'F1-bold';
+  src: url(rsc/fonts/F1\ -\ BOLD.woff2) format('woff2'),
+       url(rsc/fonts/F1\ -\ BOLD.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'F1-regular';
+  src: url(rsc/fonts/F1\ -\ REGULAR.woff2) format('woff2'),
+       url(rsc/fonts/F1\ -\ REGULAR.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'F1-wide';
+  src: url(rsc/fonts/F1\ -\ WIDE.woff2) format('woff2'),
+       url(rsc/fonts/F1\ -\ WIDE.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/**/
+ul {
+
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+h1 {
+
+  font-weight: 700;
+}
+
+/* ---------- BARRA ---------- */
+#barra {
+  padding-top: 2%;
+  background-color: #BA0E0E;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  display: none;
+  left: 0;
+}
+
+.nav-link {
+
+  color: white;
+  padding: 0;
+  margin-bottom: 25%;
+  font-weight: 600;
+}
+
+/* ---------- VIDEO INICIO ---------- */
+#video-inicio {
+
+  background-image: url(rsc/img/GIF\ F1.gif);
+  background-color: lightpink;
+  background-repeat: no-repeat;
+  width: 100vh;
+  height: 100vh;
+}
+
+
+/* ---------- CUENTA REGRESIVA ---------- */
+
+#cuenta-regresiva {
+
+  margin: 5% 0 5% 0;
+  text-align: center;
+}
+
+.c-regresiva {
+
+  margin: 6% 0 6% 0;
+}
+
+.sep {
+
+  height: 2px;
+  opacity: 1;
+  color: red;
+}
+
+.sep-titulo{ width: 25%; }
+.sep-final { width: 100%; }
+
+.typo {
+
+  font-size: 60pt;
+  margin: 0;
+  font-family: 'F1-bold';
+}
+
+.elem-momento {
+
+  margin: 0;
+}
+
+/* ---------- FECHAS ---------- */
+
+#fechas {
+  
+  margin: 7% 0 5% 0;
+}
+
+#fechas hr {
+
+  width: 1px;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 35px;
+
+}
+.informacion{
+  font-size: 25px;
+  margin-top: 30px;
+}
+#informacion {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.p-vertical {
+  text-orientation: sideways-right;
+  writing-mode: vertical-lr;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.dia{
+  background: linear-gradient(135deg, #FFFFFF 0%, #EAEAEA 100%);
+box-shadow: -8px 8px 16px rgba(176, 176, 176, 0.2), 8px -8px 16px rgba(176, 176, 176, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.9), 8px 8px 20px rgba(176, 176, 176, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(176, 176, 176, 0.5);
+border-radius: 7px;
+  margin-bottom: 50px;
+}
+
+
+/* ---------- SINTONIZACIÓN ---------- */
+
+#sintonizacion {
+  margin: 7% 0 5% 0;
+ }
+
+#sint {
+ 
+ background-color: #BA0E0E;
+}
+
+/* ---------- transform-origin: left center
+ transform-: skewX: 75deg skewY: 1deg
+---------- */
+#emisoras {
+  margin-top: 150px;
+  margin-bottom:150px ;
+}
+
+/* ---------- VOTACIÓN ---------- */
+
+#votacion {
+  background-color: black;
+  margin: 5% 0 3% 0;
+  color: white;
+
+  
+}
+
+.card {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 500px;
+  margin-top: 60px;
+  margin-bottom:150px;
+  overflow: hidden;
+}
+
+.card img {
+  position: absolute;
+  object-fit: cover;
+  left: -40%;
+}
+
+.card2 {
+  position: absolute;
+  width: 100%;
+  bottom: -50%;
+  height: 100%;
+  background-color: white;
+  transform: skew(0deg, 10deg) translateY(40px);
+}
+.contenido {
+  margin-top: 10%;
+  transform: skew(0deg, -10deg);
+  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+  color: black;
+}
+.boton{
+  padding: 10px;
+  font-size: 130px;
+  position: absolute;
+  background-color: #ba0e0e;
+  z-index: 1000;
+  transform: scale(0.5,0.35) translateY(80px);
+}
+
+/* ---------- NEXT SEASON ---------- */
+
+
+/* ---------- TICKETS ---------- */
+
+/* ---------- SPONOSNRS ---------- */
+
+
+
+/* ---------- FOOTER ---------- */
+
+
+
+
+
+
+
