@@ -1,6 +1,34 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Titillium Web', serif;
+}
+
+/* FUENTES */
+@font-face {
+  font-family: 'F1-bold';
+  src: url(rsc/fonts/F1\ -\ BOLD.woff2) format('woff2'),
+       url(rsc/fonts/F1\ -\ BOLD.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'F1-regular';
+  src: url(rsc/fonts/F1\ -\ REGULAR.woff2) format('woff2'),
+       url(rsc/fonts/F1\ -\ REGULAR.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'F1-wide';
+  src: url(rsc/fonts/F1\ -\ WIDE.woff2) format('woff2'),
+       url(rsc/fonts/F1\ -\ WIDE.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 ul {
@@ -8,6 +36,11 @@ ul {
   list-style: none;
   text-align: center;
   padding: 0;
+}
+
+h1 {
+
+  font-weight: 700;
 }
 
 /* ---------- BARRA ---------- */
@@ -43,10 +76,17 @@ ul {
 #cuenta-regresiva {
 
   margin: 5% 0 5% 0;
+  text-align: center;
+}
+
+.c-regresiva {
+
+  margin: 6% 0 6% 0;
 }
 
 .sep {
-  height: 1px;
+
+  height: 2px;
   opacity: 1;
   color: red;
 }
@@ -54,10 +94,17 @@ ul {
 .sep-titulo{ width: 25%; }
 .sep-final { width: 100%; }
 
-.typo-numeros {
+.typo {
 
-  font-size: 50pt;
-  text-align: center;
+  font-size: 60pt;
+  margin: 0;
+  font-weight: bold;
+  font-family: 'F1-bold';
+}
+
+.elem-momento {
+
+  margin:0;
 }
 
 /* ---------- FECHAS ---------- */
