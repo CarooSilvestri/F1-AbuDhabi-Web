@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Titillium Web', serif;
+  font-weight: bold;
 }
 
 /* FUENTES */
@@ -103,47 +104,55 @@ h1 {
 
   font-size: 60pt;
   margin: 0;
-  font-weight: bold;
   font-family: 'F1-bold';
 }
 
 .elem-momento {
 
   margin: 0;
-  font-weight: bold;
 }
 
 /* ---------- FECHAS ---------- */
 
 #fechas {
   
-    background-color: blueviolet;
+  margin: 7% 0 5% 0;
+}
+
+#fechas hr {
+
+  width: 1px;
+  height: 20px;
+}
+
+.p-vertical {
+
+  text-orientation: sideways-right;
+  writing-mode: vertical-lr;
 }
 
 
 /* ---------- SINTONIZACIÓN ---------- */
 
-#sintonizacion {}
+#sintonizacion {
 
-.titulo {
-
-  
-  border-top: 100px solid red;
-  border-right: 100px solid transparent;
+  margin: 7% 0 5% 0;
 }
+
+#sint {
+
+ background-color: tomato;
+}
+
 
 
 /* ---------- VOTACIÓN ---------- */
 
 #votacion {
   
-  background-color: pink;
-}
-
-.Tarjetas {
-  height: auto;
-  width: 100%;
-  background-color: #ba0e0e;
+  background-color: black;
+  margin: 5% 0 3% 0;
+  color: white;
 }
 
 .card {
@@ -155,6 +164,7 @@ h1 {
 
   overflow: hidden;
 }
+
 .card img {
   position: absolute;
   object-fit: cover;
@@ -186,32 +196,18 @@ h1 {
 
 /* ---------- NEXT SEASON ---------- */
 
-#sintonizacion {
-  
-  background-color: lawngreen;
-}
-
-/* ---------- SPONOSNRS ---------- */
-
-#sintonizacion {
-  
-  background-color: lawngreen;
-}
-
-/* ---------- FOOTER ---------- */
-
-#sintonizacion {
-  
-  background-color: lawngreen;
-}
-
-
-
-
 
 /* ---------- TICKETS ---------- */
 
-#sintonizacion {
-  
-  background-color: lawngreen;
-}
+/* ---------- SPONOSNRS ---------- */
+
+
+
+/* ---------- FOOTER ---------- */
+
+
+
+
+
+
+

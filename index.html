@@ -113,63 +113,150 @@
                 </section>
             
                 <!-- FECHAS -->
-                <div id="fechas" class="row">
-                    <h1>FECHAS Y HORARIOS</h1>
-                    <div class="dia"></div>
-                    <div class="dia"></div>
-                    <div class="dia"></div>
-                    <div class="dia"></div>
+                <div id="fechas" class="row justify-content-center">
+                    <div class="col-6">
+                        <h1>FECHAS Y HORARIOS</h1>
+                    
+                        <!--10 DE DICIEMBRE -->
+                        <div class="row dia">
+                            <div class="col-3">
+                                <div class="d-flex">
+                                    <p class="p-vertical">DIC</p>
+                                    <p>10</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="col-9">
+
+                                <div class="row">
+                                    <div class="col-6">Práctica 1</div>
+                                    <div class="col-6">6:30 - 7:30</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">Práctica 2</div>
+                                    <div class="col-6">10:00 - 11:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 11 DE DICIEMBRE -->
+                        <div class="row dia">
+                            <div class="col-3">
+                                <div class="d-flex">
+                                    <p class="p-vertical">DIC</p>
+                                    <p>11</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="col-9">
+
+                                <div class="row">
+                                    <div class="col-6">Práctica 3</div>
+                                    <div class="col-6">7:00 - 8:00</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">Clasificación</div>
+                                    <div class="col-6">10:00 - 11:00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 12 DE DICIEMBRE -->
+                        <div class="row dia">
+                            <div class="col-3">
+                                <div class="d-flex">
+                                    <p class="p-vertical">DIC</p>
+                                    <p>12</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="col-9">
+
+                                <div class="row">
+                                    <div class="col-6">Carrera</div>
+                                    <div class="col-6">10:00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+
+
                 <!-- SINTONIZACIÓN -->
-                <div id="sintonizacion" class="row">
-                    <div class="titulo">
+                <div id="sintonizacion" class="row justify-content-center">
+                    <div class="d-flex flex-column" id="sint">
+                        <div class="paralelo">
                         <h2>Ubiación: Argentina</h2>
                         <h1>PARA VER LA CARRERA SINTONIZA</h1>
                     </div>
-                    <div class="emisoras">
-                        <img>
-                        <img>
-                        <img>
+                    </div>
+                    <div class="col-6" id="emisoras">
+                        <div class="row justify-content-between">
+                            <div class="col-2"><img src="rsc/img/logo-ESPN.png" width="100%"></div>
+                            <div class="col-2"><img src="rsc/img/logo-ESPN.png" width="100%"></div>
+                            <div class="col-2"><img src="rsc/img/logo-ESPN.png" width="100%"></div>
+                        </div>
                     </div>
                 </div>
 
+
+
                 <!-- VOTACIÓN -->
-                <div id="votación" class="row">
+                <div id="votacion" class="row">
                     <h3>Dos candidatos, un solo premio</h3>
                     <h1>¿QUIÉN GANARÁ EL CAMPEONATO?</h1>
                     
-                    <!-- INICIO DE CARD 1-->
-                    <div class="Tarjetas d-flex justify-content-evenly">
-                            <div  data-aos="fade-right" class="card ">
-                            <img src="imagenes/hamilton.jpg" >
-                                <div class="card2 ">
-                                <div class="contenido d-flex justify-content-center"> 
-                                    <p>HAlMITON</p>
-                                    <div class="boton"> 
-                                    <p class="text-white ">Votar</p>
+                    <!-- TARJETAS -->
+                    <div class="col-12 tarjetas">
+                        <div class="row justify-content-center">
+                            <!-- CARD 1 -->
+                            <!-- Lo acomodé para la esctructura de la web...
+                                nada mal, solo hay que emprolijar el css y quedo cool.
+                                Te lo acomodo siguiendo tu lógica pero adaptado a bst y demás
+                                tkm, caro-->
+                            <div class="col-5">
+                                <div data-aos="fade-right" class="card">
+                                <!-- sabes que por ahi podrias hacer la forma y 
+                                ponerle de fondo la foto? mmm creo que funcaria mejor-->
+                                    <img src="rsc/img/hamilton.jpg">
+                                    <div class="card2">
+                                        <div class="contenido d-flex justify-content-center"> 
+                                            <p>HAMILTON</p>
+                                            <div class="boton"> 
+                                            <p class="text-white">Votar</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                </div>
-                
+                            
+                            <!-- CARD 2 -->
+                            <div class="col-5">
+                                <div data-aos="fade-right" class="card">
+                                <!-- sabes que por ahi podrias hacer la forma y 
+                                ponerle de fondo la foto? mmm creo que funcaria mejor-->
+                                    <img src="rsc/img/Max-Verstappen-1.jpg">
+                                    <div class="card2">
+                                        <div class="contenido d-flex justify-content-center"> 
+                                            <p>VERSTAPPEN</p>
+                                            <div class="boton"> 
+                                            <p class="text-white">Votar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                 </div>                
      
    
-    <!-- FINAL DE CARD  DE CARD -->
-    <div class="card"data-aos="fade-left">
-      <img src="imagenes/Max-Verstappen-1.jpg" >
-        <div class="card2 ">
-          <div class="contenido d-flex justify-content-center"> 
-            <p>Max Verstappen</p>
-            <div class="boton"> 
-              <p class="text-white ">Votar</p>
-            </div>
-        </div>
-      </div>
-    </div>
     
-  </div>
-        </div>
         
         <!-- TICKETS -->
         <div id="tickets" class="row">
