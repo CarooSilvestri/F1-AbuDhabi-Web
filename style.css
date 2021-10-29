@@ -31,6 +31,9 @@
   font-style: normal;
 }
 
+
+
+/**/
 ul {
 
   list-style: none;
@@ -45,7 +48,7 @@ h1 {
 
 /* ---------- BARRA ---------- */
 #barra {
-
+  padding-top: 2%;
   background-color: #BA0E0E;
   height: 100vh;
   z-index: 1;
@@ -54,10 +57,12 @@ h1 {
   left: 0;
 }
 
-
 .nav-link {
 
   color: white;
+  padding: 0;
+  margin-bottom: 25%;
+  font-weight: 600;
 }
 
 /* ---------- VIDEO INICIO ---------- */
@@ -104,7 +109,8 @@ h1 {
 
 .elem-momento {
 
-  margin:0;
+  margin: 0;
+  font-weight: bold;
 }
 
 /* ---------- FECHAS ---------- */
@@ -117,9 +123,13 @@ h1 {
 
 /* ---------- SINTONIZACIÓN ---------- */
 
-#sintonizacion {
+#sintonizacion {}
+
+.titulo {
+
   
-  background-color: lawngreen;
+  border-top: 100px solid red;
+  border-right: 100px solid transparent;
 }
 
 
