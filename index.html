@@ -93,7 +93,8 @@
                         <div class="row justify-content-evenly c-regresiva">
                             <div class="col-2">
                                 <p class="elem-momento">DÍAS</p>
-                                <p class="typo dia">00</p>
+                                <!-- Cambie la class dia por fecha porque la class dia esta en la zona fechas y horarios-->
+                                <p class="typo fecha">00</p>
                             </div>
                             <div class="col-2">
                                 <p class="elem-momento">HORAS</p>
@@ -118,11 +119,12 @@
                         <h1>FECHAS Y HORARIOS</h1>
                     
                         <!--10 DE DICIEMBRE -->
-                        <div class="row dia">
+                        <!--agrege una clase y un id que es IFNORMACION -->
+                        <div class="row dia" data-aos="fade-right">
                             <div class="col-3">
                                 <div class="d-flex">
                                     <p class="p-vertical">DIC</p>
-                                    <p>10</p>
+                                    <p class="informacion">10</p>
                                     <hr>
                                 </div>
                             </div>
@@ -130,7 +132,7 @@
                             <div class="col-9">
 
                                 <div class="row">
-                                    <div class="col-6">Práctica 1</div>
+                                    <div class="col-6" id="informacion">Práctica 1</div>
                                     <div class="col-6">6:30 - 7:30</div>
                                 </div>
                                 <div class="row">
@@ -141,11 +143,11 @@
                         </div>
                         
                         <!-- 11 DE DICIEMBRE -->
-                        <div class="row dia">
+                        <div class="row dia" data-aos="fade-right">
                             <div class="col-3">
                                 <div class="d-flex">
                                     <p class="p-vertical">DIC</p>
-                                    <p>11</p>
+                                    <p class="informacion">11</p>
                                     <hr>
                                 </div>
                             </div>
@@ -153,7 +155,7 @@
                             <div class="col-9">
 
                                 <div class="row">
-                                    <div class="col-6">Práctica 3</div>
+                                    <div class="col-6" id="informacion">Práctica 3</div>
                                     <div class="col-6">7:00 - 8:00</div>
                                 </div>
                                 <div class="row">
@@ -164,11 +166,11 @@
                         </div>
 
                         <!-- 12 DE DICIEMBRE -->
-                        <div class="row dia">
+                        <div class="row dia" data-aos="fade-right">
                             <div class="col-3">
                                 <div class="d-flex">
                                     <p class="p-vertical">DIC</p>
-                                    <p>12</p>
+                                    <p class="informacion" >12</p>
                                     <hr>
                                 </div>
                             </div>
@@ -176,8 +178,8 @@
                             <div class="col-9">
 
                                 <div class="row">
-                                    <div class="col-6">Carrera</div>
-                                    <div class="col-6">10:00</div>
+                                    <div class="col-6" id="informacion">Carrera</div>
+                                    <div class="col-6" id="informacion">10:00</div>
                                 </div>
                             </div>
                         </div>
@@ -189,16 +191,17 @@
                 <!-- SINTONIZACIÓN -->
                 <div id="sintonizacion" class="row justify-content-center">
                     <div class="d-flex flex-column" id="sint">
-                        <div class="paralelo">
+                        <div class="paralelo text-white">
                         <h2>Ubiación: Argentina</h2>
                         <h1>PARA VER LA CARRERA SINTONIZA</h1>
                     </div>
                     </div>
                     <div class="col-6" id="emisoras">
-                        <div class="row justify-content-between">
+                        <!-- Ficha las imagenes en resposiv -->
+                        <div class="row justify-content-between"  data-aos="zoom-in">
                             <div class="col-2"><img src="rsc/img/logo-ESPN.png" width="100%"></div>
-                            <div class="col-2"><img src="rsc/img/logo-ESPN.png" width="100%"></div>
-                            <div class="col-2"><img src="rsc/img/logo-ESPN.png" width="100%"></div>
+                            <div class="col-2"><img src="rsc/img/logo-F1.png" width="100%"></div>
+                            <div class="col-2"><img src="rsc/img/star channle.png" width="100%"></div>
                         </div>
                     </div>
                 </div>
@@ -230,13 +233,14 @@
                                             <p class="text-white">Votar</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>   
                                 </div>
+                                
                             </div>
                             
                             <!-- CARD 2 -->
                             <div class="col-5">
-                                <div data-aos="fade-right" class="card">
+                                <div data-aos="fade-left" class="card">
                                 <!-- sabes que por ahi podrias hacer la forma y 
                                 ponerle de fondo la foto? mmm creo que funcaria mejor-->
                                     <img src="rsc/img/Max-Verstappen-1.jpg">

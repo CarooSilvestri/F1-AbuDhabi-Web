@@ -123,36 +123,60 @@ h1 {
 
   width: 1px;
   height: 20px;
+  margin-left: 20px;
+  margin-top: 35px;
+
 }
-
+.informacion{
+  font-size: 25px;
+  margin-top: 30px;
+}
+#informacion {
+  font-size: 20px;
+  margin-top: 20px;
+}
 .p-vertical {
-
   text-orientation: sideways-right;
   writing-mode: vertical-lr;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.dia{
+  background: linear-gradient(135deg, #FFFFFF 0%, #EAEAEA 100%);
+box-shadow: -8px 8px 16px rgba(176, 176, 176, 0.2), 8px -8px 16px rgba(176, 176, 176, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.9), 8px 8px 20px rgba(176, 176, 176, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(176, 176, 176, 0.5);
+border-radius: 7px;
+  margin-bottom: 50px;
 }
 
 
 /* ---------- SINTONIZACIÓN ---------- */
 
 #sintonizacion {
-
   margin: 7% 0 5% 0;
-}
+ }
 
 #sint {
-
- background-color: tomato;
+ 
+ background-color: #BA0E0E;
 }
 
-
+/* ---------- transform-origin: left center
+ transform-: skewX: 75deg skewY: 1deg
+---------- */
+#emisoras {
+  margin-top: 150px;
+  margin-bottom:150px ;
+}
 
 /* ---------- VOTACIÓN ---------- */
 
 #votacion {
-  
   background-color: black;
   margin: 5% 0 3% 0;
   color: white;
+
+  
 }
 
 .card {
@@ -161,7 +185,8 @@ h1 {
   margin-bottom: 20px;
   width: 500px;
   height: 500px;
-
+  margin-top: 60px;
+  margin-bottom:150px;
   overflow: hidden;
 }
 
@@ -184,6 +209,7 @@ h1 {
   transform: skew(0deg, -10deg);
   font-size: 3rem;
   font-family: "Bebas Neue", cursive;
+  color: black;
 }
 .boton{
   padding: 10px;
