@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Productos - Silcon Electrónica</title>
+
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>    
+
+    <link rel="icon" type="image/x-icon" href="rsc/logo mini.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"></head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='actions.js'></script>
+</head>
+<body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <!-- Nav Bar -->
+    <nav class="navbar bg-light navbar-expand-sm navbar-light" id="nav-bar">
+              
+        <!-- Logo -->
+        <div id="logo">
+            <a href="index.html" class="navbar-brand">
+                <img width="70%" src="rsc/logo.png"></img>
+            </a>             
+        </div>     
+    
+        <!-- Button toggle colapsed -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>   
+
+        <!-- Options Menu -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
+
+            <ul class="navbar nav bar-expand-sm justify-content-end" id="options">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li> 
+            </ul>
+        </div> 
+    </nav>
+
+    <!-- Banner -->
+    <div class="container-fluid">
+
+        <div class="row">
+           <div class="col-12" id="banner-section">
+               <h1>Productos</h1>
+           </div>
+       </div>
+   </div>
+
+    <!-- Produtos -->
+    <div class="container" id="cont-menu-tarjetas">
+
+        <!-- Acordion -->
+        <div class="row" id="cont-productos">
+
+            <div class="col-sm-6 col-md-3 col-xl-3" id="cont-acor">
+
+                <button class="acordion" id="todos">Todos los productos</button>
+                <button class="dropdown" id="placas">Placas</button>
+                    <div class="panel">
+                        <div class="cont-panel">
+                            <div class="fondo-panel acordion" id="placas_linea_economica">
+                                <div class="opt-panel">Linea económica</div>
+                            </div>
+                            <div class="fondo-panel acordion" id="placas_linea_superior">
+                                <div class="opt-panel">Linea superior</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <button class="acordion" id="tableros">Tableros</button>
+                <button class="acordion" id="displays">Displays</button>
+                <button class="acordion" id="programadores">Programadores</button>                
+                <button class="acordion" id="ucab">Unidades de cabina</button>
+                <button class="acordion" id="botoneras">Botoneras</button>                
+                <button class="acordion" id="monitoreo_remoto">Monitoreo remoto</button>
+                <button class="acordion" id="escaleras_mecanicas">Escaleras mecánicas</button>
+                <button class="acordion" id="placas_de_interfaz">Placa de interfaz</button>
+                <button class="acordion" id="despachos">Ascensores en grupo</button>
+                <button class="acordion" id="fuentes">Fuentes</button>
+                <button class="acordion" id="accesorios">Accesorios</button>
+                <button class="acordion" id="descargables">Manuales descargables</button>
+            </div>
+
+            <!-- Container productos-->
+            <div class="col-sm-6 col-md-9 col-xl-9" id="cont-prod">
+                <div class="row" id="prods">
+                </div>
+            </div>
+            <div id="modal">
+                <div class="container-fluid" id="modal-content">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-xl-6" id="col-modal-img">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-xl-6" id="col-modal-text">
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    
+      <!-- Footer -->
+      <footer class="container-fluid">
+
+        <!-- Contenido -->
+        <div class="row" id="content-footer">
+
+            <!-- C1 - Redes + Separador + Créditos-->
+            <div class="col-10 col-lg-11">
+
+                <!-- Redes -->
+                <div id="redes">
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/silcon.ascensores/" target="_blanck" alt="instagram">
+                        <img src="rsc/instagram.png" id="red-social">
+                    </a> 
+                                
+                    <!-- Facebook-->
+                    <a href="https://www.facebook.com/silconelectronica.ascensores" target="_blanck" alt="facebook">
+                        <img src="rsc/facebook.png" id="red-social">
+                    </a>
+                </div> 
+
+                <!-- Separador + info-->
+                <hr id="sep-footer">
+                <span class="fs-6" style="word-wrap: break-word; width: 100%;">© SILCON 2021. Diseño y desarrollo <a href="https://www.behance.net/caroosilvestri" target="_blanck">CarooDesigns</a>.</span>      
+            </div>
+            
+            <!-- Data fiscal -->
+            <div class="col-2 col-lg-1">
+                <a href="http://qr.afip.gob.ar/?qr=e418ibHMz4zfdBL2bj8Plw,," target="_F960AFIPInfo">
+                    <img src="rsc/Data-fiscal.jpg" width="40px">
+                </a>
+            </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script src='actions.js'></script>
+     
+</body>
+</html>
