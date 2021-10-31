@@ -217,6 +217,9 @@ h1 {
 .cont-img-fondo {
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+  background-image: url(rsc/img/hamilton.jpg);
+  background-size: cover;
+  background-position: 70%;
   background-color: rebeccapurple;
   object-fit: fill;
   height: 300px;
