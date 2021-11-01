@@ -1,0 +1,311 @@
+<!-- 
+    WEB ABU DHABI F1 - PLATFORMAS OPERATIVAS
+    INICIO: 26/10/2021
+    FECHA ACTUAL: 26/10/2021
+    VERSION: 1.0
+    ESTADO: EN PROGRESO
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABU DHABI GRAND PRIX</title>
+
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>    
+
+    <link rel="icon" type="image/x-icon" href="rsc/img/logo-F1.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet"> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- BARRA / MENÚ -->
+            <div class="col-1 sticky-top" id="barra" data-aos="">
+                <a href="#">
+                    <img src="rsc/img/logo-race.png" class="img-fluid" alt="logo carrera">
+                </a>
+                
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#fechas" class="nav-link">
+                        FECHAS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                        VOTÁ A TU FAVORITO
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                        PRÓXIMA TEMPORADA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                        TICKETS
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex align-items-end">
+                    <p>Descarga la app</p>
+                    <img><img>
+                </div>
+            </div>
+        
+            <div class="col-12" id="cuerpo">
+                
+                <!-- VIDEO -->
+                <div class="row">
+                    <div class="col-12" id="video-inicio">
+                        <div class="logo-gp"></div>
+                        <div class="txtoyflecha"></div>
+                    </div>
+                </div>
+                
+                <!-- CUENTA REGRESIVA -->
+                <section id="cuenta-regresiva" class="row row-cont justify-content-evenly">
+                    <div class="col-8">
+                        <div class="d-flex flex-row justify-content-between">
+                            <hr class="align-self-center sep sep-titulo">
+                            <h1>CUENTRA REGRESIVA</h1>
+                            <hr class="align-self-center sep sep-titulo">
+                        </div>
+                        
+                        <div class="row justify-content-evenly c-regresiva">
+                            <div class="col-2">
+                                <p class="elem-momento">DÍAS</p>
+                                <!-- Cambie la class dia por fecha porque la class dia esta en la zona fechas y horarios-->
+                                <p class="typo fecha">00</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="elem-momento">HORAS</p>
+                                <p class="typo hora">00</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="elem-momento">MINUTOS</p>
+                                <p class="typo minutos">00</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="elem-momento">SEGUNDOS</p>
+                                <p class="typo segundos">00</p>
+                            </div>
+                        </div>
+                        <hr class="sep sep-final">
+                    </div>
+                </section>
+            
+                <!-- FECHAS -->
+                <div id="fechas" class="row justify-content-center">
+                    <div class="col-6">
+                        <h1>FECHAS Y HORARIOS</h1>
+                    
+                        <!--10 DE DICIEMBRE -->
+                        <!--agrege una clase y un id que es IFNORMACION -->
+                        <div class="row dia align-items-center" data-aos="fade-right">
+                            <div class="col-3">
+                                <div class="d-flex">
+                                    <p class="mes-vertical">DIC</p>
+                                    <p class="num-dia">10</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="col-9 info-dia">
+
+                                <div class="row">
+                                    <div class="col-6">Práctica 1</div>
+                                    <div class="col-6">6:30 - 7:30</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">Práctica 2</div>
+                                    <div class="col-6">10:00 - 11:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 11 DE DICIEMBRE -->
+                        <div class="row dia align-items-center" data-aos="fade-right">
+                            <div class="col-3">
+                                <div class="d-flex">
+                                    <p class="mes-vertical">DIC</p>
+                                    <p class="num-dia">11</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="col-9 info-dia">
+
+                                <div class="row">
+                                    <div class="col-6">Práctica 3</div>
+                                    <div class="col-6">7:00 - 8:00</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">Clasificación</div>
+                                    <div class="col-6">10:00 - 11:00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 12 DE DICIEMBRE -->
+                        <div class="row dia align-items-center" data-aos="fade-right">
+                            <div class="col-3">
+                                <div class="d-flex">
+                                    <p class="mes-vertical">DIC</p>
+                                    <p class="num-dia">12</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="col-9 info-dia">
+
+                                <div class="row">
+                                    <div class="col-6 dia-carrera">Carrera</div>
+                                    <div class="col-6 dia-carrera">10:00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- SINTONIZACIÓN -->
+                <div id="sintonizacion" class="row justify-content-center">
+                    <div class="col-10 align-items-center" id="sint" data-aos="fade-right">
+                        <div class="" id="tit-sint">
+                            <h5><b>Ubiación</b>: Argentina</h5>
+                            <h1>PARA VER LA CARRERA SINTONIZÁ</h1>
+                        </div>
+                    </div>
+                    <div class="col-6" id="emisoras">
+                        <div class="row justify-content-between" data-aos="zoom-in">
+                            <div class="col-3"><img src="rsc/img/logo-ESPN.png" width="100%" class="img-fluid" alt="logo-espn"></div>
+                            <div class="col-3"><img src="rsc/img/logo-F1.png" width="100%" class="img-fluid" alt="logo-f1"></div>
+                            <div class="col-3"><img src="rsc/img/star channle.png" width="100%" class="img-fluid" alt="logo-star"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- VOTACIÓN -->
+                <div id="votacion" class="row">
+                    <h3>Dos candidatos, un solo premio</h3>
+                    <h1>¿QUIÉN GANARÁ EL CAMPEONATO?</h1>
+                    
+                    <!-- TARJETAS -->
+                    <div class="col-12 tarjetas">
+                        <div class="row justify-content-center">
+
+                            <!-- CARD 1 -->
+                            <div class="col-3 card" data-aos="fade-right">
+                                <div class="cont-card">
+                                    <div class="cont-img-fondo">
+                                       
+                                    </div>
+                                    <h2 class="d-flex justify-content-center">HAMILTON</h2>
+                                    <button class="boton text-white"> Votá! </button>
+                                </div>   
+                            </div>
+                            
+                            <!-- CARD 2 -->
+                            <!-- div class="col-5">
+                                <div data-aos="fade-left" class="card">
+                             
+                                    <img src="rsc/img/Max-Verstappen-1.jpg">
+                                    <div class="card2">
+                                        <div class="contenido d-flex justify-content-center"> 
+                                            <p>VERSTAPPEN</p>
+                                            <div class="boton"> 
+                                            <p class="text-white">Votar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- CARD 2 -->
+                            <div class="col-3 card" data-aos="fade-left">
+                                <div class="cont-card">
+                                    <div class="cont-img-fondo">
+                                       
+                                    </div>
+                                    <h2 class="d-flex justify-content-center">HAMILTON</h2>
+                                    <button class="boton text-white"> Votá! </button>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+    
+                 </div>                
+     
+
+        <!-- TICKETS -->
+        <div id="tickets" class="row d-flex justify-content-center">
+            <h1>TICKETS</h1>
+            <div class="ticket-dia">
+                <h1>10</h1>
+                <h2>Diciembre</h2>
+                <p>Practica 1 y 2</p>
+                <h1>$500</h1>
+            </div>
+            <div class="ticket-dia">
+                <h1>11</h1>
+                <h2>Diciembre</h2>
+                <p>Práctica y Clasificación</p>
+                <h1>$600</h1>
+            </div>
+            <div class="ticket-dia">
+                <h1>12</h1>
+                <h2>Diciembre</h2>
+                <p>Carerra</p>
+                <h1>$800</h1>
+            </div>
+        </div>
+
+
+        <!-- PROXIMA TEMPORADA -->
+        <!-- ver? -->
+        <!-- SPONSORS -->
+        <div id="sponsors" class="row">
+
+
+        </div>
+        </div>
+      
+        </div>
+    </div>
+
+
+       
+    <!-- FOOTER -->    
+    <footer class="container-fluid">
+
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
