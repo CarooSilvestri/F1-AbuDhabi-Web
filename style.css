@@ -256,7 +256,6 @@ h1 {
 .boton{
   padding: 10px;
   font-size: 130px;
-  position: absolute;
   background-color: #ba0e0e;
   z-index: 1000;
   transform: scale(0.5,0.35) translateY(80px);
