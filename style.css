@@ -339,6 +339,11 @@ footer {
   padding: 5%;
 }
 
+.col-footer {
+
+  padding: 5% 0 5% 5%;
+}
+
 #sep-footer {
 
   width: 1px;
@@ -351,3 +356,4 @@ footer {
 
   text-indent: 10%;
 }
+
