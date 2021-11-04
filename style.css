@@ -45,6 +45,7 @@ ul {
 h1 {
 
   font-weight: 700;
+  text-align: center;
 }
 
 /* ---------- BARRA ---------- */
@@ -119,78 +120,118 @@ h1 {
   margin: 7% 0 5% 0;
 }
 
+#fechas h1 {
+  
+  margin-bottom: 8%;
+}
+.dia{
+
+  background: linear-gradient(135deg, #FFFFFF 0%, #EAEAEA 100%);
+  box-shadow: -8px 8px 16px rgba(176, 176, 176, 0.2), 
+              8px -8px 16px rgba(176, 176, 176, 0.2), 
+              -8px -8px 16px rgba(255, 255, 255, 0.9), 
+              8px 8px 20px rgba(176, 176, 176, 0.9), 
+              inset 1px 1px 2px rgba(255, 255, 255, 0.3), 
+              inset -1px -1px 2px rgba(176, 176, 176, 0.5);
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+
+.num-dia{
+
+  font-size: 50px;
+  text-align: center;
+}
+
 #fechas hr {
 
-  width: 1px;
-  height: 20px;
-  margin-left: 20px;
-  margin-top: 35px;
+  width: 2px;
+  height: 55px;
+  margin-left: 15%;
+  color: #ba0e0e;
+  opacity: 1;
+}
 
-}
-.informacion{
-  font-size: 25px;
-  margin-top: 30px;
-}
-#informacion {
+.info-dia {
+
   font-size: 20px;
-  margin-top: 20px;
 }
-.p-vertical {
-  text-orientation: sideways-right;
+
+.mes-vertical {
+
+  margin: 0;
+  text-align: center;
   writing-mode: vertical-lr;
-  padding: 20px;
-  font-size: 30px;
+  font-size: 25px;  
+  transform: rotate(180deg);
 }
 
-.dia{
-  background: linear-gradient(135deg, #FFFFFF 0%, #EAEAEA 100%);
-box-shadow: -8px 8px 16px rgba(176, 176, 176, 0.2), 8px -8px 16px rgba(176, 176, 176, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.9), 8px 8px 20px rgba(176, 176, 176, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(176, 176, 176, 0.5);
-border-radius: 7px;
-  margin-bottom: 50px;
-}
+.dia-carrera {
 
+  font-size: 25px;
+}
 
 /* ---------- SINTONIZACIÓN ---------- */
 
 #sintonizacion {
-  margin: 7% 0 5% 0;
- }
 
-#sint {
- 
- background-color: #BA0E0E;
+  color: white;
+  text-align: center;
 }
 
-/* ---------- transform-origin: left center
- transform-: skewX: 75deg skewY: 1deg
----------- */
+#sint {
+
+  background-color: #BA0E0E;
+  transform: skewX(-20deg);
+}
+
+#tit-sint {
+
+  transform: skewX(20deg);
+  margin: 1%;
+}
+
 #emisoras {
-  margin-top: 150px;
-  margin-bottom:150px ;
+
+  margin: 5% 0 10% 0;
 }
 
 /* ---------- VOTACIÓN ---------- */
 
 #votacion {
+
   background-color: black;
   margin: 5% 0 3% 0;
-  color: white;
+  color: white; 
+}
+
+.card {
+  
+  padding: 0;
+  border: none;
+  height: 450px;
+  margin: 5% 0 10% 0;
+  margin-left: 20px;
+}
+
+.cont-img-fondo {
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+  background-image: url(rsc/img/hamilton.jpg);
+  background-size: cover;
+  background-position: 70%;
+  background-color: rebeccapurple;
+  object-fit: fill;
+  height: 300px;
+}
+
+
+.cont-card {
 
   
 }
 
-.card {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 500px;
-  height: 500px;
-  margin-top: 60px;
-  margin-bottom:150px;
-  overflow: hidden;
-}
-
-.card img {
+/* .card img {
   position: absolute;
   object-fit: cover;
   left: -40%;
@@ -202,15 +243,14 @@ border-radius: 7px;
   bottom: -50%;
   height: 100%;
   background-color: white;
-  transform: skew(0deg, 10deg) translateY(40px);
-}
-.contenido {
-  margin-top: 10%;
-  transform: skew(0deg, -10deg);
-  font-size: 3rem;
-  font-family: "Bebas Neue", cursive;
+ 
+}*/
+
+.tarjetas h2{
+  
   color: black;
-}
+z-index: 1000;} 
+
 .boton{
   padding: 10px;
   font-size: 130px;
@@ -218,12 +258,29 @@ border-radius: 7px;
   background-color: #ba0e0e;
   z-index: 1000;
   transform: scale(0.5,0.35) translateY(80px);
+  left:-10%;
 }
 
 /* ---------- NEXT SEASON ---------- */
 
 
 /* ---------- TICKETS ---------- */
+
+.ticket-dia {
+  padding: 0;
+  height: auto;
+  width: 205px;
+ 
+  margin: 5% 0 10% 0;
+  background: #FFFFFF;
+box-shadow: -7px 7px 14px rgba(207, 207, 207, 0.2), 7px -7px 14px rgba(207, 207, 207, 0.2), -7px -7px 14px rgba(255, 255, 255, 0.9), 7px 7px 18px rgba(207, 207, 207, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(207, 207, 207, 0.5);
+border-radius: 8px;
+margin-left: 20px;
+}
+.ticket-dia p,h1,h2{
+padding: 20px;
+left: 20px;
+}
 
 /* ---------- SPONOSNRS ---------- */
 .carousel__contenedor{
@@ -271,10 +328,7 @@ margin-bottom: 100px;
 
 /* ---------- FOOTER ---------- */
 
-footer {
 
-  background-color: black;
-}
 
 
 

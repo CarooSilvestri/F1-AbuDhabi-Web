@@ -43,7 +43,7 @@ function act_texto(dias, horas, minutos, segundos) {
     numeros[3].innerHTML = segundos
 }
 
- // Caroussel
+// Caroussel
  window.addEventListener(`load`, function() {
      new Glider(document.querySelector(".carousel__lista"),{
         slidesToShow: 1,
