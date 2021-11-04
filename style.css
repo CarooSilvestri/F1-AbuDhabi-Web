@@ -328,9 +328,32 @@ margin-bottom: 100px;
 
 /* ---------- FOOTER ---------- */
 
+footer {
 
+  background-color: black;
+  color: white
+}
 
+#cont-footer {
+   
+  padding: 5%;
+}
 
+.col-footer {
 
+  padding: 5% 0 5% 5%;
+}
 
+#sep-footer {
+
+  width: 1px;
+  border-color: white;
+  height: 500px;
+  opacity: 0.8;
+}
+
+.p-fecha {
+
+  text-indent: 10%;
+}
 
