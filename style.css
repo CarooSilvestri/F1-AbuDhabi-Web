@@ -265,12 +265,16 @@ z-index: 10000;
 .carousel{
 margin-bottom: 100px;
 
-
 }
+
+
 
 /* ---------- FOOTER ---------- */
 
+footer {
 
+  background-color: black;
+}
 
 
 
