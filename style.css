@@ -226,11 +226,6 @@ h1 {
 }
 
 
-.cont-card {
-
-  
-}
-
 /* .card img {
   position: absolute;
   object-fit: cover;
@@ -341,19 +336,40 @@ footer {
 
 .col-footer {
 
-  padding: 5% 0 5% 5%;
+  padding: 10% 0 5% 0%;
+}
+
+.col-footer h3 {
+
+  font-weight: 600;
+}
+
+.col-footer h5 {
+
+  font-weight: bold;
 }
 
 #sep-footer {
 
-  width: 1px;
+  height: 1px;
   border-color: white;
-  height: 500px;
   opacity: 0.8;
+  margin-top: 4%;
+}
+
+.desc-buttons img {
+
+  margin: 3%;
 }
 
 .p-fecha {
 
   text-indent: 10%;
+  font-weight: 400;
 }
 
+#sep-horizontal {
+
+  opacity: 1;
+  margin: 8% 0 3% 0;
+}
