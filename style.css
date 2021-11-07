@@ -102,6 +102,18 @@ hr {
 } 
 
 
+.btn-dwn-app {
+
+  background-color: #ba0e0e;
+  color: white;
+  border: none;
+  padding: 0.5%;
+  margin-top: 5%;
+  font-weight: 500;
+  border-radius: 20px;
+  width: 10%;
+}
+
 /* ---------- CUENTA REGRESIVA ---------- */
 
 #cuenta-regresiva {
