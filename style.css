@@ -320,7 +320,7 @@ z-index: 1000;}
   background-size: cover;
   background-position-y: -25px;
   background-position-x: center;
-  margin: 5% 2% 5% 2%;
+  margin: 10% 2% 10% 2%;
   padding: 4%;
   border-radius: 10px;
 }
@@ -338,6 +338,12 @@ z-index: 1000;}
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.ticket-dia p {
+
+  font-size: 14pt;
+  font-weight: 500;
+}
+
 .btn-buy {
 
   margin: 10% 0 8% 0;
@@ -351,6 +357,13 @@ z-index: 1000;}
   -webkit-backdrop-filter: blur( 20px );
   border-radius: 10px;
   border: none;
+  
+}
+
+.btn-buy:hover {
+
+  transform: scale(1.1);
+	transition: all 300ms ease-in-out;
 }
 
 /* ---------- SPONOSNRS ---------- */
