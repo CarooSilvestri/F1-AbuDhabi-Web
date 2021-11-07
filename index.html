@@ -100,7 +100,6 @@
                         <div class="row justify-content-evenly c-regresiva">
                             <div class="col-2">
                                 <p class="elem-momento">DÍAS</p>
-                                <!-- Cambie la class dia por fecha porque la class dia esta en la zona fechas y horarios-->
                                 <p class="typo fecha">00</p>
                             </div>
                             <div class="col-2">
@@ -246,73 +245,39 @@
                  </div>                
      
 
-        <!-- TICKETS -->
-        <!-- SE VE SOLO EN MD PARA ADELANTE -->
-        <div class="d-none d-sm-block">
-        <div id="tickets" class="row d-flex justify-content-center">
-            <h1>TICKETS</h1>
-            <div class="ticket-dia">
-                <h1>10</h1>
-                <h2>Diciembre</h2>
-                <p>Practica 1 y 2</p>
-                <h1>$500</h1>
-            </div>
-            <div class="ticket-dia">
-                <h1>11</h1>
-                <h2>Diciembre</h2>
-                <p>Práctica y Clasificación</p>
-                <h1>$600</h1>
-            </div>
-            <div class="ticket-dia">
-                <h1>12</h1>
-                <h2>Diciembre</h2>
-                <p>Carerra</p>
-                <h1>$800</h1>
-            </div>
-        </div>
-        </div>
- <!-- SE VE SOLO EN SM -->
-        <div id="tickets" class="row  d-block d-sm-none ">
-            <h1>TICKETS</h1>
-            <div class="carousel">
-                <div class="carousel__contenedor">
-                    <!-- boton izquierdo-->
-                 <button aria-label="Anterrior" class="carousel__anterior">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                      </svg>
-                 </button>
-                 <!-- elementos-->
-                    <div class="carousel__Tiketselementos">
-                        <div class="ticket-dia">
-                            <h1>10</h1>
-                            <h2>Diciembre</h2>
-                            <p>Practica 1 y 2</p>
-                            <h1>$500</h1>
-                        </div>
-                        <div class="ticket-dia">
-                            <h1>11</h1>
-                            <h2>Diciembre</h2>
-                            <p>Práctica y Clasificación</p>
-                            <h1>$600</h1>
-                        </div>
-                        <div class="ticket-dia">
-                            <h1>12</h1>
-                            <h2>Diciembre</h2>
-                            <p>Carerra</p>
-                            <h1>$800</h1>
-                        </div>
-                    </div>
-                     <!-- boton derecho-->
-                 <button aria-label="Sigueinte" class="carousel__siguiente">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                </button>
+            <!-- TICKETS -->
+            <!-- SE VE SOLO EN MD PARA ADELANTE -->
+            <div id="tickets" class="row justify-content-center">
+                <h1>TICKETS</h1>
+                
+                <div class="col-3 ticket-dia">
+                    <h1>10</h1>
+                    <h2>Diciembre</h2>
+                    <hr>
+                    <p>Practica 1 y 2</p>
+                    <h1>$500</h1>
+                    <button class="btn-buy">Comprar</button>
                 </div>
-                <div role="tablist" class="carousel__indicador"></div>
-                     </div>
-        </div>
+
+                <div class="col-3 ticket-dia">
+                    <h1>11</h1>
+                    <h2>Diciembre</h2>
+                    <hr>
+                    <p>Práctica y Clasificación</p>
+                    <h1>$600</h1>
+                    <button class="btn-buy">Comprar</button>
+                </div>
+
+                <div class="col-3 ticket-dia">
+                    <h1>12</h1>
+                    <h2>Diciembre</h2>
+                    <hr>
+                    <p>Carerra</p>
+                    <h1>$800</h1>
+                    <button class="btn-buy">Comprar</button>
+                </div>
+            </div>
+ 
         
 
         <!-- PROXIMA TEMPORADA -->

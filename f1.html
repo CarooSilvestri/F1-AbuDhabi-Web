@@ -1,59 +1,42 @@
-<html lang="es">
-    <html>
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-	 <link href="css/bootstrap-grid.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-	<link rel="stylesheet" href="home.css"> 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
- <body>
-<!-- INICIO DE CARD 1-->
-<div class="Tarjetas d-flex justify-content-evenly">
-        <div  data-aos="fade-right" class="card ">
-          <img src="imagenes/hamilton.jpg" >
-            <div class="card2">
-              <div class="contenido d-flex justify-content-center"> 
-                <h2>HAlMITON</h2>
-                <div class="boton"> 
-                  <p class="text-white">Votar</p>
-                </div>
-            </div>
+<!-- SE VE SOLO EN SM -->
+<div id="tickets" class="row  d-block d-sm-none ">
+  <h1>TICKETS</h1>
+  <div class="carousel">
+      <div class="carousel__contenedor">
+          <!-- boton izquierdo-->
+       <button aria-label="Anterrior" class="carousel__anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+       </button>
+       <!-- elementos-->
+          <div class="carousel__Tiketselementos">
+              <div class="ticket-dia">
+                  <h1>10</h1>
+                  <h2>Diciembre</h2>
+                  <p>Practica 1 y 2</p>
+                  <h1>$500</h1>
+              </div>
+              <div class="ticket-dia">
+                  <h1>11</h1>
+                  <h2>Diciembre</h2>
+                  <p>Práctica y Clasificación</p>
+                  <h1>$600</h1>
+              </div>
+              <div class="ticket-dia">
+                  <h1>12</h1>
+                  <h2>Diciembre</h2>
+                  <p>Carerra</p>
+                  <h1>$800</h1>
+              </div>
           </div>
-        </div>
-        
-     
-   
-    <!-- FINAL DE CARD  DE CARD -->
-    <div class="card"data-aos="fade-left">
-      <img src="imagenes/Max-Verstappen-1.jpg" >
-        <div class="card2 ">
-          <div class="contenido d-flex justify-content-center"> 
-            <p>Max Verstappen</p>
-            <div class="boton"> 
-              <p class="text-white ">Votar</p>
-            </div>
-        </div>
+           <!-- boton derecho-->
+       <button aria-label="Sigueinte" class="carousel__siguiente">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+      </button>
       </div>
-    </div>
-    
-  </div>
-
-  <!--scripts-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>     
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        
-</body>
-  </html>
-</html>
+      <div role="tablist" class="carousel__indicador"></div>
+           </div>
+</div>
