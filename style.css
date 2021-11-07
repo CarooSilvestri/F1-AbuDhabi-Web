@@ -101,17 +101,34 @@ hr {
   z-index: 1;
 } 
 
-
 .btn-dwn-app {
 
   background-color: #ba0e0e;
   color: white;
   border: none;
   padding: 0.5%;
-  margin-top: 5%;
+  margin-top: 3%;
   font-weight: 500;
   border-radius: 20px;
   width: 10%;
+}
+ 
+.cont-text-flecha {
+  
+  margin-top: 5%;
+  color:white;
+}
+
+.cont-text-flecha p {
+
+  font-weight: 500;
+}
+
+.arrow {
+  
+  opacity: 0.5;
+  width: 25px;
+  fill: white;
 }
 
 /* ---------- CUENTA REGRESIVA ---------- */
