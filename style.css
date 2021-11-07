@@ -48,6 +48,10 @@ h1 {
   text-align: center;
 }
 
+hr {
+  opacity: 1;
+}
+
 /* ---------- BARRA ---------- */
 #barra {
   padding-top: 2%;
@@ -94,7 +98,6 @@ h1 {
 .sep {
 
   height: 2px;
-  opacity: 1;
   color: red;
 }
 
@@ -149,7 +152,6 @@ h1 {
   height: 55px;
   margin-left: 15%;
   color: #ba0e0e;
-  opacity: 1;
 }
 
 .info-dia {
@@ -334,9 +336,9 @@ footer {
   padding: 7%;
 }
 
-.col-footer {
+.col-mitad1 {
 
-  padding: 10% 0 5% 0%;
+  padding: 0 5% 0 5%;
 }
 
 .col-footer h3 {
@@ -370,6 +372,6 @@ footer {
 
 #sep-horizontal {
 
-  opacity: 1;
   margin: 8% 0 3% 0;
 }
+
