@@ -74,13 +74,18 @@ hr {
 /* ---------- VIDEO INICIO ---------- */
 #video-inicio {
 
-  background-image: url(rsc/img/GIF\ F1.gif);
+  background-image: url(https://media.giphy.com/media/Me61fl1yXTzrSwFKDo/giphy-downsized-large.gif);
   background-color: lightpink;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 100vh;
   height: 100vh;
+  z-index: -2;
 }
 
+.overlay {
+  
+  background-color: rgba(0,0,0,0.5);
+}
 
 /* ---------- CUENTA REGRESIVA ---------- */
 
