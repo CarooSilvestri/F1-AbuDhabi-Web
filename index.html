@@ -8,410 +8,506 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>ABU DHABI GRAND PRIX</title>
-    
-        <meta charset='utf-8'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>    
-    
-        <link rel="icon" type="image/x-icon" href="rsc/img/logo-F1.png" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
-    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
-    </head>
-<body>
+  <head>
+    <title>ABU DHABI GRAND PRIX</title>
 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="icon" type="image/x-icon" href="rsc/img/logo-F1.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="row">
+      <div class="row">
+        <!-- BARRA / MENÚ -->
+        <div
+          class="
+            col-1
+            align-items-center
+            sticky-top
+            flex-column
+            justify-content-between
+          "
+          id="barra"
+          data-aos=""
+        >
+          <a href="#">
+            <img
+              src="rsc/img/logo-race.png"
+              class="img-fluid"
+              alt="logo carrera"
+            />
+          </a>
 
-            <!-- BARRA / MENÚ -->
-            <div class="col-1 sticky-top" id="barra" data-aos="">
-                <a href="#">
-                    <img src="rsc/img/logo-race.png" class="img-fluid" alt="logo carrera">
-                </a>
-                
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a href="#fechas" class="nav-link">FECHAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">VOTÁ A TU FAVORITO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">PRÓXIMA TEMPORADA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">TICKETS</a>
-                    </li>
-                </ul>
-                
-                <div class="d-flex align-items-end">
-                    <p>Descarga la app</p>
-                    <img><img>
-                </div>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="#fechas" class="nav-link">FECHAS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">VOTÁ A TU FAVORITO</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">PRÓXIMA TEMPORADA</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">TICKETS</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-end">
+            <p>Descarga la app</p>
+            <img /><img />
+          </div>
+        </div>
+
+        <div class="col-12" id="cuerpo">
+          <!-- VIDEO -->
+
+          <div class="row">
+            <div class="col-12" id="overlay">
+              <div id="video-inicio"></div>
             </div>
-        
-            <div class="col-12" id="cuerpo">
-                
-                <!-- VIDEO -->
-               
-                <div class="row">
-                    <div class="col-12" id="overlay">
-                        <div id="video-inicio"></div>
-                    </div>
 
-                    <div class="d-flex flex-column align-self-center justify-content-center" id="cont-banner">
-                        <img src="rsc/img/logo-race.png" width="20%" alt="logo carrera" class="img-fluid">
-                        
-                        <button class="btn-dwn-app">Descarga la app</button>
+            <div
+              class="
+                d-flex
+                flex-column
+                align-self-center
+                justify-content-center
+              "
+              id="cont-banner"
+            >
+              <img
+                src="rsc/img/logo-race.png"
+                width="20%"
+                alt="logo carrera"
+                class="img-fluid"
+              />
 
-                        <div class="cont-text-flecha">
-                            <p>Discover</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow" class="bi bi-arrow-down" viewBox="0 0 16 16"> 
-                                <path fill-rule="evenodd" d="M 8 2 a 1 0.5 90 0 1 0.5 1 v 23.586 l 3.146 -6.294 a 1 0.5 90 0 1 0.708 1.416 l -4 8 a 1 0.5 90 0 1 -0.708 0 l -4 -8 a 1 0.5 90 0 1 0.708 -1.416 L 7.5 26.586 V 3 A 1 0.5 90 0 1 8 2 z"/>
-                            </svg>
-                        </div>    
-                    </div>
-                                               
-                </div>
-                
-                <!-- CUENTA REGRESIVA -->
-                <section id="cuenta-regresiva" class="row row-cont justify-content-evenly">
-                    <div class="col-8">
-                        <div class="d-flex flex-row justify-content-between">
-                            <hr class="align-self-center sep sep-titulo">
-                            <h1>CUENTRA REGRESIVA</h1>
-                            <hr class="align-self-center sep sep-titulo">
-                        </div>
-                        
-                        <div class="row justify-content-evenly c-regresiva">
-                            <div class="col-2">
-                                <p class="elem-momento">DÍAS</p>
-                                <p class="typo fecha">00</p>
-                            </div>
-                            <div class="col-2">
-                                <p class="elem-momento">HORAS</p>
-                                <p class="typo hora">00</p>
-                            </div>
-                            <div class="col-2">
-                                <p class="elem-momento">MINUTOS</p>
-                                <p class="typo minutos">00</p>
-                            </div>
-                            <div class="col-2">
-                                <p class="elem-momento">SEGUNDOS</p>
-                                <p class="typo segundos">00</p>
-                            </div>
-                        </div>
-                        <hr class="sep sep-final">
-                    </div>
-                </section>
-            
-                <!-- FECHAS -->
-                <div id="fechas" class="row justify-content-center">
-                    <div class="col-6">
-                        <h1>FECHAS Y HORARIOS</h1>
-                    
-                        <!--10 DE DICIEMBRE -->
-                        <!--agrege una clase y un id que es IFNORMACION -->
-                        <div class="row dia align-items-center" data-aos="fade-right">
-                            <div class="col-3">
-                                <div class="d-flex">
-                                    <p class="mes-vertical">DIC</p>
-                                    <p class="num-dia">10</p>
-                                    <hr>
-                                </div>
-                            </div>
-                            
-                            <div class="col-9 info-dia">
+              <button class="btn-dwn-app">Descarga la app</button>
 
-                                <div class="row">
-                                    <div class="col-6">Práctica 1</div>
-                                    <div class="col-6">6:30 - 7:30</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">Práctica 2</div>
-                                    <div class="col-6">10:00 - 11:00</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- 11 DE DICIEMBRE -->
-                        <div class="row dia align-items-center" data-aos="fade-right">
-                            <div class="col-3">
-                                <div class="d-flex">
-                                    <p class="mes-vertical">DIC</p>
-                                    <p class="num-dia">11</p>
-                                    <hr>
-                                </div>
-                            </div>
-                            
-                            <div class="col-9 info-dia">
-
-                                <div class="row">
-                                    <div class="col-6">Práctica 3</div>
-                                    <div class="col-6">7:00 - 8:00</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">Clasificación</div>
-                                    <div class="col-6">10:00 - 11:00</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 12 DE DICIEMBRE -->
-                        <div class="row dia align-items-center" data-aos="fade-right">
-                            <div class="col-3">
-                                <div class="d-flex">
-                                    <p class="mes-vertical">DIC</p>
-                                    <p class="num-dia">12</p>
-                                    <hr>
-                                </div>
-                            </div>
-                            
-                            <div class="col-9 info-dia">
-
-                                <div class="row">
-                                    <div class="col-6 dia-carrera">Carrera</div>
-                                    <div class="col-6 dia-carrera">10:00</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- SINTONIZACIÓN -->
-                <div id="sintonizacion" class="row justify-content-center">
-                    <div class="col-10 align-items-center" id="sint" data-aos="fade-right">
-                        <div class="" id="tit-sint">
-                            <h5><b>Ubiación</b>: Argentina</h5>
-                            <h1>PARA VER LA CARRERA SINTONIZÁ</h1>
-                        </div>
-                    </div>
-                    <div class="col-6" id="emisoras">
-                        <div class="row justify-content-between" data-aos="zoom-in">
-                            <div class="col-3"><img src="rsc/img/logo-ESPN.png" width="100%" class="img-fluid" alt="logo-espn"></div>
-                            <div class="col-3"><img src="rsc/img/logo-F1.png" width="100%" class="img-fluid" alt="logo-f1"></div>
-                            <div class="col-3"><img src="rsc/img/star channle.png" width="100%" class="img-fluid" alt="logo-star"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- VOTACIÓN -->
-                <div id="votacion" class="row">
-                    <h3>Dos candidatos, un solo premio</h3>
-                    <h1>¿QUIÉN GANARÁ EL CAMPEONATO?</h1>
-                    
-                    <!-- TARJETAS -->
-                    <div class="col-12 tarjetas">
-                        <div class="row justify-content-center">
-
-                            <!-- CARD 1 -->
-                            <div class="col-3 card" data-aos="fade-right">
-                                <div class="cont-card">
-                                    <div class="cont-img-fondo"></div>
-                                    <h2 class="d-flex justify-content-center">Lewis Hamilton</h2>
-                                    <button class="boton text-white"> Votá! </button>
-                                </div>   
-                            </div>
-                            
-                            <!-- CARD 2 -->
-                            <div class="col-3 card" data-aos="fade-left">
-                                <div class="cont-card">
-                                    <div class="cont-img-fondo"></div>
-                                    <h2 class="d-flex justify-content-center">Max Verstappen</h2>
-                                    <button class="boton text-white"> Votá! </button>
-                                </div>   
-                            </div>
-                        </div>
-                    </div>
-    
-                 </div>                
-     
-
-            <!-- TICKETS -->
-            <!-- SE VE SOLO EN MD PARA ADELANTE -->
-            <div id="tickets" class="row justify-content-center">
-                <h1>TICKETS</h1>
-                
-                <div class="col-3 ticket-dia">
-                    <h1>10</h1>
-                    <h2>Diciembre</h2>
-                    <hr>
-                    <p>Practica 1 y 2</p>
-                    <h1>$500</h1>
-                    <button class="btn-buy">Comprar</button>
-                </div>
-
-                <div class="col-3 ticket-dia">
-                    <h1>11</h1>
-                    <h2>Diciembre</h2>
-                    <hr>
-                    <p>Práctica y Clasificación</p>
-                    <h1>$600</h1>
-                    <button class="btn-buy">Comprar</button>
-                </div>
-
-                <div class="col-3 ticket-dia">
-                    <h1>12</h1>
-                    <h2>Diciembre</h2>
-                    <hr>
-                    <p>Carerra</p>
-                    <h1>$800</h1>
-                    <button class="btn-buy">Comprar</button>
-                </div>
+              <div class="cont-text-flecha">
+                <p>Discover</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="arrow"
+                  class="bi bi-arrow-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M 8 2 a 1 0.5 90 0 1 0.5 1 v 23.586 l 3.146 -6.294 a 1 0.5 90 0 1 0.708 1.416 l -4 8 a 1 0.5 90 0 1 -0.708 0 l -4 -8 a 1 0.5 90 0 1 0.708 -1.416 L 7.5 26.586 V 3 A 1 0.5 90 0 1 8 2 z"
+                  />
+                </svg>
+              </div>
             </div>
- 
-        
+          </div>
 
-        <!-- PROXIMA TEMPORADA -->
-        <!-- ver? -->
-        <!-- SPONSORS -->
-         <div id="sponsors" class="row">
+          <!-- CUENTA REGRESIVA -->
+          <section
+            id="cuenta-regresiva"
+            class="row row-cont justify-content-evenly"
+          >
+            <div class="col-8">
+              <div class="d-flex flex-row justify-content-between">
+                <hr class="align-self-center sep sep-titulo" />
+                <h1>CUENTRA REGRESIVA</h1>
+                <hr class="align-self-center sep sep-titulo" />
+              </div>
+
+              <div class="row justify-content-evenly c-regresiva">
+                <div class="col-2">
+                  <p class="elem-momento">DÍAS</p>
+                  <p class="typo fecha">00</p>
+                </div>
+                <div class="col-2">
+                  <p class="elem-momento">HORAS</p>
+                  <p class="typo hora">00</p>
+                </div>
+                <div class="col-2">
+                  <p class="elem-momento">MINUTOS</p>
+                  <p class="typo minutos">00</p>
+                </div>
+                <div class="col-2">
+                  <p class="elem-momento">SEGUNDOS</p>
+                  <p class="typo segundos">00</p>
+                </div>
+              </div>
+              <hr class="sep sep-final" />
+            </div>
+          </section>
+
+          <!-- FECHAS -->
+          <div id="fechas" class="row justify-content-center">
+            <div class="col-6">
+              <h1>FECHAS Y HORARIOS</h1>
+
+              <!--10 DE DICIEMBRE -->
+              <!--agrege una clase y un id que es IFNORMACION -->
+              <div class="row dia align-items-center" data-aos="fade-right">
+                <div class="col-3">
+                  <div class="d-flex">
+                    <p class="mes-vertical">DIC</p>
+                    <p class="num-dia">10</p>
+                    <hr />
+                  </div>
+                </div>
+
+                <div class="col-9 info-dia">
+                  <div class="row">
+                    <div class="col-6">Práctica 1</div>
+                    <div class="col-6">6:30 - 7:30</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">Práctica 2</div>
+                    <div class="col-6">10:00 - 11:00</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 11 DE DICIEMBRE -->
+              <div class="row dia align-items-center" data-aos="fade-right">
+                <div class="col-3">
+                  <div class="d-flex">
+                    <p class="mes-vertical">DIC</p>
+                    <p class="num-dia">11</p>
+                    <hr />
+                  </div>
+                </div>
+
+                <div class="col-9 info-dia">
+                  <div class="row">
+                    <div class="col-6">Práctica 3</div>
+                    <div class="col-6">7:00 - 8:00</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">Clasificación</div>
+                    <div class="col-6">10:00 - 11:00</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 12 DE DICIEMBRE -->
+              <div class="row dia align-items-center" data-aos="fade-right">
+                <div class="col-3">
+                  <div class="d-flex">
+                    <p class="mes-vertical">DIC</p>
+                    <p class="num-dia">12</p>
+                    <hr />
+                  </div>
+                </div>
+
+                <div class="col-9 info-dia">
+                  <div class="row">
+                    <div class="col-6 dia-carrera">Carrera</div>
+                    <div class="col-6 dia-carrera">10:00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SINTONIZACIÓN -->
+          <div id="sintonizacion" class="row justify-content-center">
+            <div
+              class="col-10 align-items-center"
+              id="sint"
+              data-aos="fade-right"
+            >
+              <div class="" id="tit-sint">
+                <h5><b>Ubiación</b>: Argentina</h5>
+                <h1>PARA VER LA CARRERA SINTONIZÁ</h1>
+              </div>
+            </div>
+            <div class="col-6" id="emisoras">
+              <div class="row justify-content-between" data-aos="zoom-in">
+                <div class="col-3">
+                  <img
+                    src="rsc/img/logo-ESPN.png"
+                    width="100%"
+                    class="img-fluid"
+                    alt="logo-espn"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="rsc/img/logo-F1.png"
+                    width="100%"
+                    class="img-fluid"
+                    alt="logo-f1"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="rsc/img/star channle.png"
+                    width="100%"
+                    class="img-fluid"
+                    alt="logo-star"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VOTACIÓN -->
+          <div id="votacion" class="row">
+            <h3>Dos candidatos, un solo premio</h3>
+            <h1>¿QUIÉN GANARÁ EL CAMPEONATO?</h1>
+
+            <!-- TARJETAS -->
+            <div class="col-12 tarjetas">
+              <div class="row justify-content-center">
+                <!-- CARD 1 -->
+                <div class="col-3 card" data-aos="fade-right">
+                  <div class="cont-card">
+                    <div class="cont-img-fondo"></div>
+                    <h2 class="d-flex justify-content-center">
+                      Lewis Hamilton
+                    </h2>
+                    <button class="boton text-white">Votá!</button>
+                  </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-3 card" data-aos="fade-left">
+                  <div class="cont-card">
+                    <div class="cont-img-fondo"></div>
+                    <h2 class="d-flex justify-content-center">
+                      Max Verstappen
+                    </h2>
+                    <button class="boton text-white">Votá!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TICKETS -->
+          <!-- SE VE SOLO EN MD PARA ADELANTE -->
+          <div id="tickets" class="row justify-content-center">
+            <h1>TICKETS</h1>
+
+            <div class="col-3 ticket-dia">
+              <h1>10</h1>
+              <h2>Diciembre</h2>
+              <hr />
+              <p>Practica 1 y 2</p>
+              <h1>$500</h1>
+              <button class="btn-buy">Comprar</button>
+            </div>
+
+            <div class="col-3 ticket-dia">
+              <h1>11</h1>
+              <h2>Diciembre</h2>
+              <hr />
+              <p>Práctica y Clasificación</p>
+              <h1>$600</h1>
+              <button class="btn-buy">Comprar</button>
+            </div>
+
+            <div class="col-3 ticket-dia">
+              <h1>12</h1>
+              <h2>Diciembre</h2>
+              <hr />
+              <p>Carerra</p>
+              <h1>$800</h1>
+              <button class="btn-buy">Comprar</button>
+            </div>
+          </div>
+
+          <!-- PROXIMA TEMPORADA -->
+          <!-- ver? -->
+          <!-- SPONSORS -->
+          <div id="sponsors" class="row">
             <h1>SPONSORS</h1>
             <div class="carousel">
-                <div class="carousel__contenedor">
-                    <!-- boton izquierdo-->
-                 <button aria-label="Anterrior" class="carousel__anterior">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                      </svg>
-                 </button>
-                 <!-- elementos-->
-                    <div class="carousel__lista">
-                        <div class="carousel__elemento">
-                        <img src="rsc/img/Audi.png " alt="audi">
-                        <p>Audi</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="rsc/img/bmw-logo-1-1.png " alt="bmw">
-                            <p>BMW</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="rsc/img/red-bull-logo-2-1.png " alt="red bull">
-                            <p>Red bull</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="rsc/img/chiq-logo-vector.png " alt="chiq">
-                            <p>Chiq</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="rsc/img/logo-alfa-romeo.png " alt="alfa romeo">
-                            <p>Alfa romeo</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="rsc/img/rolex-logo-1.png " alt="rolex">
-                            <p>Rolex</p>
-                            </div>
-                        <div class="carousel__elemento">
-                            <img src="rsc/img/png-transparent-scuderia-ferrari-ferrari-365-gt4-2-2-400-and-412-car-enzo-ferrari-ferrari-logo-logo-vector-ferrari.png " alt="ferrari">
-                            <p>Ferrari</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="rsc/img/2560px-AMD_Logo.svg.png " alt="AMD">
-                            <p>AMD</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="rsc/img/Monster-Energy-Logo-1.png " alt="Monster">
-                            <p>Moster Energy</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="rsc/img/epson-logo-1-1.png " alt="Epson">
-                            <p>Epson</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="rsc/img/UBS_Logo.png " alt="Ubs">
-                            <p>UBS</p>
-                        </div>
-                    </div>
-                     <!-- boton derecho-->
-                 <button aria-label="Sigueinte" class="carousel__siguiente">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
+              <div class="carousel__contenedor">
+                <!-- boton izquierdo-->
+                <button aria-label="Anterrior" class="carousel__anterior">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-left"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                    />
+                  </svg>
                 </button>
+                <!-- elementos-->
+                <div class="carousel__lista">
+                  <div class="carousel__elemento">
+                    <img src="rsc/img/Audi.png " alt="audi" />
+                    <p>Audi</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="rsc/img/bmw-logo-1-1.png " alt="bmw" />
+                    <p>BMW</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="rsc/img/red-bull-logo-2-1.png " alt="red bull" />
+                    <p>Red bull</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="rsc/img/chiq-logo-vector.png " alt="chiq" />
+                    <p>Chiq</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="rsc/img/logo-alfa-romeo.png " alt="alfa romeo" />
+                    <p>Alfa romeo</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="rsc/img/rolex-logo-1.png " alt="rolex" />
+                    <p>Rolex</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img
+                      src="rsc/img/png-transparent-scuderia-ferrari-ferrari-365-gt4-2-2-400-and-412-car-enzo-ferrari-ferrari-logo-logo-vector-ferrari.png "
+                      alt="ferrari"
+                    />
+                    <p>Ferrari</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="rsc/img/2560px-AMD_Logo.svg.png " alt="AMD" />
+                    <p>AMD</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img
+                      src="rsc/img/Monster-Energy-Logo-1.png "
+                      alt="Monster"
+                    />
+                    <p>Moster Energy</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="rsc/img/epson-logo-1-1.png " alt="Epson" />
+                    <p>Epson</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="rsc/img/UBS_Logo.png " alt="Ubs" />
+                    <p>UBS</p>
+                  </div>
                 </div>
-                <div role="tablist" class="carousel__indicadores"></div>
-                     </div>
-
+                <!-- boton derecho-->
+                <button aria-label="Sigueinte" class="carousel__siguiente">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div role="tablist" class="carousel__indicadores"></div>
+            </div>
+          </div>
         </div>
-        </div>
-      
-        </div>
+      </div>
     </div>
 
-
-       
-    <!-- FOOTER -->    
+    <!-- FOOTER -->
     <footer class="container-fluid">
-        <div class="row" id="cont-footer">
-
-            <div class="col-9">
-                <div class="row col-mitad1">
-                    <div class="col-6 ">
-                        <h3>Descargá la app!</h3>
-                        <hr id="sep-footer">    
-                        <div class="d-flex align-items-md-start desc-buttons">
-                            <img src="rsc/img/google-play-badge.png" width="30%" alt="google-badge" class="img-fluid">
-                            <img src="rsc/img/app-store-badge.svg" width="30%" alt="app-store-badge" class="img-fluid"> 
-                         </div>
-                    </div>
-
-                    <div class="col-6">
-                            <h3>About us</h3>
-                            <hr id="sep-footer">    
-                            <p class="p-fecha">Contacto</p>
-                            <p class="p-fecha">Prensa</p>
-                            <p class="p-fecha">Terms & Conditions</p>
-                            <p class="p-fecha">Privacy Policy</p>
-                    </div>
-                    <div class="row col-mitad1"><hr></div>
-                </div>
+      <div class="row" id="cont-footer">
+        <div class="col-9">
+          <div class="row col-mitad1">
+            <div class="col-6">
+              <h3>Descargá la app!</h3>
+              <hr id="sep-footer" />
+              <div class="d-flex align-items-md-start desc-buttons">
+                <img
+                  src="rsc/img/google-play-badge.png"
+                  width="30%"
+                  alt="google-badge"
+                  class="img-fluid"
+                />
+                <img
+                  src="rsc/img/app-store-badge.svg"
+                  width="30%"
+                  alt="app-store-badge"
+                  class="img-fluid"
+                />
+              </div>
             </div>
-            
-            <div class="col-3">
-                <div class="row">
-                    <h3>Fechas</h3>
-                    <hr id="sep-footer"> 
-                    <div class="d-flex flex-column foot-fecha">
-                          <h5>10 de Diciembre</h5>
-                        <p class="p-fecha"><b>Práctica 1 |</b> 6:30 - 7:30 </p>
-                        <p class="p-fecha"><b>Práctica 2 |</b> 10:00 - 11:00 </p>
-                    </div>
-                  
-                    <h5>11 de Diciembre</h5>
-                        <p class="p-fecha"><b>Práctica 3 |</b> 7:00 - 8:00 </p>
-                        <p class="p-fecha"><b>Clasificación |</b> 10:00 - 11:00 </p>
-                    <h5>12 de Diciembre</h5>
-                        <p class="p-fecha"><b>Carrera |</b> 10:00 </p>
-                </div>
+
+            <div class="col-6">
+              <h3>About us</h3>
+              <hr id="sep-footer" />
+              <p class="p-fecha">Contacto</p>
+              <p class="p-fecha">Prensa</p>
+              <p class="p-fecha">Terms & Conditions</p>
+              <p class="p-fecha">Privacy Policy</p>
             </div>
-            <hr id="sep-horizontal">
-            <p>© Abu Dhabi Corporation 2021</p>   
+            <div class="row col-mitad1"><hr /></div>
+          </div>
         </div>
+
+        <div class="col-3">
+          <div class="row">
+            <h3>Fechas</h3>
+            <hr id="sep-footer" />
+            <div class="d-flex flex-column foot-fecha">
+              <h5>10 de Diciembre</h5>
+              <p class="p-fecha"><b>Práctica 1 |</b> 6:30 - 7:30</p>
+              <p class="p-fecha"><b>Práctica 2 |</b> 10:00 - 11:00</p>
+            </div>
+
+            <h5>11 de Diciembre</h5>
+            <p class="p-fecha"><b>Práctica 3 |</b> 7:00 - 8:00</p>
+            <p class="p-fecha"><b>Clasificación |</b> 10:00 - 11:00</p>
+            <h5>12 de Diciembre</h5>
+            <p class="p-fecha"><b>Carrera |</b> 10:00</p>
+          </div>
+        </div>
+        <hr id="sep-horizontal" />
+        <p>© Abu Dhabi Corporation 2021</p>
+      </div>
     </footer>
 
     <!-- SCRIPTS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init(); </script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
-
-</body>
+  </body>
 </html>
