@@ -118,13 +118,13 @@
 
           <!-- FECHAS -->
           <div id="fechas" class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6 col-md-6">
               <h1>FECHAS Y HORARIOS</h1>
 
               <!--10 DE DICIEMBRE -->
               <!--agrege una clase y un id que es IFNORMACION -->
               <div class="row dia align-items-center" data-aos="fade-right">
-                <div class="col-3">
+                <div class="col-sm-2 col-md-3 col-lg-3">
                   <div class="d-flex">
                     <p class="mes-vertical">DIC</p>
                     <p class="num-dia">10</p>
@@ -132,21 +132,21 @@
                   </div>
                 </div>
 
-                <div class="col-9 info-dia">
+                <div class="col-sm-10 col-md-9 col-lg-9 info-dia">
                   <div class="row">
-                    <div class="col-6">Práctica 1</div>
-                    <div class="col-6">6:30 - 7:30</div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">Práctica 1</div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">6:30 - 7:30</div>
                   </div>
                   <div class="row">
-                    <div class="col-6">Práctica 2</div>
-                    <div class="col-6">10:00 - 11:00</div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">Práctica 2</div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">10:00 - 11:00</div>
                   </div>
                 </div>
               </div>
 
               <!-- 11 DE DICIEMBRE -->
               <div class="row dia align-items-center" data-aos="fade-right">
-                <div class="col-3">
+                <div class="col-sm-2 col-md-3 col-lg-3">
                   <div class="d-flex">
                     <p class="mes-vertical">DIC</p>
                     <p class="num-dia">11</p>
@@ -154,21 +154,21 @@
                   </div>
                 </div>
 
-                <div class="col-9 info-dia">
+                <div class="col-sm-10 col-md-9 col-lg-9 info-dia">
                   <div class="row">
-                    <div class="col-6">Práctica 3</div>
-                    <div class="col-6">7:00 - 8:00</div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">Práctica 3</div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">7:00 - 8:00</div>
                   </div>
                   <div class="row">
-                    <div class="col-6">Clasificación</div>
-                    <div class="col-6">10:00 - 11:00</div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">Clasificación</div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">10:00 - 11:00</div>
                   </div>
                 </div>
               </div>
 
               <!-- 12 DE DICIEMBRE -->
               <div class="row dia align-items-center" data-aos="fade-right">
-                <div class="col-3">
+                <div class="col-sm-2 col-md-3 col-lg-3">
                   <div class="d-flex">
                     <p class="mes-vertical">DIC</p>
                     <p class="num-dia">12</p>
@@ -200,7 +200,7 @@
             </div>
             <div class="col-6" id="emisoras">
               <div class="row justify-content-between" data-aos="zoom-in">
-                <div class="col-3">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                   <img
                     src="rsc/img/logo-ESPN.png"
                     width="100%"
@@ -208,7 +208,7 @@
                     alt="logo-espn"
                   />
                 </div>
-                <div class="col-3">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                   <img
                     src="rsc/img/logo-F1.png"
                     width="100%"
@@ -216,7 +216,7 @@
                     alt="logo-f1"
                   />
                 </div>
-                <div class="col-3">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                   <img
                     src="rsc/img/star channle.png"
                     width="100%"
@@ -243,7 +243,7 @@
 
           <!-- TICKETS -->
           <!-- SE VE SOLO EN MD PARA ADELANTE -->
-          <div id="tickets" class="row justify-content-center">
+          <div id="tickets" class="row justify-content-center d-none d-xl-flex">
             <h1>TICKETS</h1>
 
             <div class="col-3 ticket-dia">
@@ -274,8 +274,57 @@
             </div>
           </div>
 
+          <!-- SE VE SOLO EN SM -->
+          <div id="tickets" class="row d-block d-lg-none d-xl-none">
+            <h1>TICKETS</h1>
+            <div class="carousel">
+              
+              <div class="carousel__contenedor">
+
+              <!-- elementos-->
+                <div class="carousel__Tiketselementos">
+                  <div class="col-3 ticket-dia">
+                    <h1>10</h1>
+                    <h2>Diciembre</h2>
+                    <hr />
+                    <p>Practica 1 y 2</p>
+                    <h1>$500</h1>
+                    <button class="btn-buy">Comprar</button>
+                  </div>
+
+                  <div class="col-3 ticket-dia">
+                    <h1>11</h1>
+                    <h2>Diciembre</h2>
+                    <hr />
+                    <p>Práctica y Clasificación</p>
+                    <h1>$600</h1>
+                    <button class="btn-buy">Comprar</button>
+                  </div>
+
+                  <div class="col-3 ticket-dia">
+                    <h1>12</h1>
+                    <h2>Diciembre</h2>
+                    <hr />
+                    <p>Carrera</p>
+                    <h1>$800</h1>
+                    <button class="btn-buy">Comprar</button>
+                  </div>
+                </div>
+                
+                <!-- boton derecho-->
+                <button aria-label="Sigueinte" class="carousel__siguiente">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </button>
+              </div>
+              <div role="tablist" class="carousel__indicador"></div>
+            </div>
+          </div>
+
           <!-- PROXIMA TEMPORADA -->
-          <!-- ver? -->
+          <!-- jejej nos vemos en la proxima entrega! -->
+
           <!-- SPONSORS -->
           <div id="sponsors" class="row">
             <h1>SPONSORS</h1>
@@ -283,71 +332,44 @@
               <div class="carousel__contenedor">
                 <!-- boton izquierdo-->
                 <button aria-label="Anterrior" class="carousel__anterior">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-chevron-left"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                   </svg>
                 </button>
                 <!-- elementos-->
                 <div class="carousel__lista">
-                  <div class="carousel__elemento">
-                    <img src="rsc/img/Audi.png " alt="audi" />
-                    <p>Audi</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/Audi.png" width="50%" alt="audi"/>
                   </div>
-                  <div class="carousel__elemento">
-                    <img src="rsc/img/bmw-logo-1-1.png " alt="bmw" />
-                    <p>BMW</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/bmw.png"  width="50%"  alt="bmw" />
                   </div>
-                  <div class="carousel__elemento">
-                    <img src="rsc/img/red-bull-logo-2-1.png " alt="red bull" />
-                    <p>Red bull</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/red-bull.png " width="50%"alt="red bull" />
                   </div>
-                  <div class="carousel__elemento">
-                    <img src="rsc/img/chiq-logo-vector.png " alt="chiq" />
-                    <p>Chiq</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/chiq-logo-vector.png " width="50%"alt="chiq" />
                   </div>
-                  <div class="carousel__elemento">
-                    <img src="rsc/img/logo-alfa-romeo.png " alt="alfa romeo" />
-                    <p>Alfa romeo</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/logo-alfa-romeo.png " width="50%"alt="alfa romeo" />
                   </div>
-                  <div class="carousel__elemento">
-                    <img src="rsc/img/rolex-logo-1.png " alt="rolex" />
-                    <p>Rolex</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/rolex-logo-1.png " width="50%"alt="rolex"/>
                   </div>
-                  <div class="carousel__elemento">
-                    <img
-                      src="rsc/img/png-transparent-scuderia-ferrari-ferrari-365-gt4-2-2-400-and-412-car-enzo-ferrari-ferrari-logo-logo-vector-ferrari.png "
-                      alt="ferrari"
-                    />
-                    <p>Ferrari</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/ferrari.png "alt="ferrari" width="50%"/>
                   </div>
-                  <div class="carousel__elemento">
-                    <img src="rsc/img/2560px-AMD_Logo.svg.png " alt="AMD" />
-                    <p>AMD</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/2560px-AMD_Logo.svg.png " width="50%"alt="AMD" />
                   </div>
-                  <div class="carousel__elemento">
-                    <img
-                      src="rsc/img/Monster-Energy-Logo-1.png "
-                      alt="Monster"
-                    />
-                    <p>Moster Energy</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/Monster-Energy-Logo-1.png "width="50%" alt="Monster"/>
                   </div>
-                  <div class="carousel__elemento">
-                    <img src="rsc/img/epson-logo-1-1.png " alt="Epson" />
-                    <p>Epson</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/epson-logo-1-1.png "width="50%"alt="Epson" />
                   </div>
-                  <div class="carousel__elemento">
-                    <img src="rsc/img/UBS_Logo.png " alt="Ubs" />
-                    <p>UBS</p>
+                  <div class="d-flex carousel__elemento">
+                    <img src="rsc/img/UBS_Logo.png "width="50%" alt="Ubs" />  
                   </div>
                 </div>
                 <!-- boton derecho-->
@@ -376,10 +398,11 @@
 
     <!-- FOOTER -->
     <footer class="container-fluid">
-      <div class="row" id="cont-footer">
+      <div class="row justify-content-sm-center" id="cont-footer">
         <div class="col-9">
-          <div class="row col-mitad1">
-            <div class="col-6">
+
+          <div class="row col-mitad1 justify-content-sm-center">
+            <div class="col-sm-12 col-md-6 col-lg-6">
               <h3>Descargá la app!</h3>
               <hr id="sep-footer" />
               <div class="d-flex align-items-md-start desc-buttons">
@@ -398,20 +421,26 @@
               </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6 col-lg-6">
               <h3>About us</h3>
               <hr id="sep-footer" />
               <p class="p-fecha">Contacto</p>
               <p class="p-fecha">Prensa</p>
               <p class="p-fecha">Terms & Conditions</p>
               <p class="p-fecha">Privacy Policy</p>
+              <div class="d-flex justify-content-center" id="redes">
+                <img class="img-fluid red" src="rsc/img/redes/facebook.png" alt="facbook" width="30px">
+                <img class="img-fluid red" src="rsc/img/redes/instagram.png" alt="instagram" width="30px">
+                <img class="img-fluid red" src="rsc/img/redes/twitter.png" alt="twitter" width="30px">
+                <img class="img-fluid red" src="rsc/img/redes/youtube.png" alt="youtube" width="30px">
+              </div>
             </div>
-            <div class="row col-mitad1"><hr /></div>
           </div>
+          
         </div>
 
-        <div class="col-3">
-          <div class="row">
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="row justify-content-sm-center">
             <h3>Fechas</h3>
             <hr id="sep-footer" />
             <div class="d-flex flex-column foot-fecha">

@@ -44,7 +44,7 @@ ul {
 
 h1 {
 
-  font-size: clamp(1.3rem, 2.5vw, 3rem); 
+  font-size: clamp(2rem, 2.5vw, 3rem); 
   font-weight: 700;
   text-align: center;
 }
@@ -171,7 +171,7 @@ a, a:hover {
 /* ---------- CUENTA REGRESIVA ---------- */
 
 #cuenta-regresiva {
-  margin: 5% 0 5% 0;
+  margin: 8% 0 5% 0;
   text-align: center;
 }
 
@@ -203,13 +203,16 @@ a, a:hover {
 /* ---------- FECHAS ---------- */
 
 #fechas {
-  margin: 7% 0 5% 0;
+  margin: 10% 0 5% 0;
 }
 
 #fechas h1 {
-  margin-bottom: 8%;
+
+  margin-bottom: 10%;
 }
+
 .dia {
+
   background: linear-gradient(135deg, #ffffff 0%, #eaeaea 100%);
   box-shadow: -8px 8px 16px rgba(176, 176, 176, 0.2),
     8px -8px 16px rgba(176, 176, 176, 0.2),
@@ -222,11 +225,13 @@ a, a:hover {
 }
 
 .num-dia {
+
   font-size: 50px;
   text-align: center;
 }
 
 #fechas hr {
+
   width: 2px;
   height: 55px;
   margin-left: 15%;
@@ -234,6 +239,7 @@ a, a:hover {
 }
 
 .info-dia {
+
   font-size: 20px;
 }
 
@@ -324,6 +330,7 @@ a, a:hover {
 }
 
 .ticket-dia {
+
   padding: 2%;
   margin: 3%;
   text-align: center;
@@ -342,6 +349,7 @@ a, a:hover {
 }
 
 .btn-buy {
+
   margin: 10% 0 8% 0;
   padding: 3%;
   width: 60%;
@@ -363,15 +371,21 @@ a, a:hover {
 }
 
 /* ---------- SPONOSNRS ---------- */
+
+#sponsors {
+
+  margin: 0 5% 5% 5%;
+}
+
 .carousel__contenedor {
+
   position: relative;
 }
+
 .carousel__anterior,
 .carousel__siguiente {
   position: absolute;
   display: block;
-  width: 100px;
-  height: 100px;
   border: none;
   top: calc(50% - 35px);
   cursor: pointer;
@@ -383,22 +397,15 @@ a, a:hover {
 }
 
 .carousel__siguiente {
+
   right: -10px;
 }
-.carousel__anterior {
-  left: -10px;
-}
+
 .carousel__elemento {
-  margin-top: 100px;
-  margin-bottom: 50px;
+
   text-align: center;
   font-size: 50px;
-}
-.carousel__elemento img {
-  height: 150px;
-}
-.carousel {
-  margin-bottom: 100px;
+  margin: auto;
 }
 
 /* ---------- FOOTER ---------- */
@@ -442,4 +449,16 @@ footer {
 
 #sep-horizontal {
   margin: 8% 0 3% 0;
+}
+
+#redes {
+
+  width: 100%;
+  margin-top: 8%;
+  padding: 2%;
+}
+
+.red {
+
+  margin: 4%;
 }
