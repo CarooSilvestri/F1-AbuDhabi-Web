@@ -237,15 +237,34 @@ hr {
   margin: 10% 2% 10% 2%;
   text-align: center;
   background-color: black;
-  margin: 5% 0 3% 0;
   color: white;
-  height: 100vh;
+  height: 80vh;
+  border-radius: 10px;
 }
 
 #card-lewis, #card-max {
 
   width: 50%;
 } 
+
+#card-lewis {
+
+  background: red;
+  background-image: url(rsc/img/hamilton.jpg);
+  background-size: cover;
+}
+
+.open {
+
+  width: 75%;
+}
+/*  #card-max:hover  {
+
+  width: 100%;
+  transition: all 500ms ease-in-out;
+}
+ */
+
 
 /* ---------- NEXT SEASON ---------- */
 
