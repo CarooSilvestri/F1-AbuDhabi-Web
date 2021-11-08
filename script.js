@@ -114,3 +114,14 @@ window.addEventListener(`load`, function () {
   });
 });
 
+// Votación
+
+var c_lewis = document.getElementById("card-lewis")
+var c_max = document.getElementById("card-max")
+
+c_lewis.onmouseover = function() {
+
+  c_lewis.style.width = "100%"
+  c_max.style.display = "none"
+
+}

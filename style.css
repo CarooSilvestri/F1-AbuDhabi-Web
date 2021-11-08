@@ -233,26 +233,26 @@ hr {
 /* ---------- VOTACIÓN ---------- */
 
 #votacion {
-
+  
+  margin: 10% 2% 10% 2%;
   text-align: center;
   background-color: black;
   margin: 5% 0 3% 0;
   color: white;
+  height: 100vh;
 }
 
-#intento1 {
-  width: 20px;
-}
+#card-lewis, #card-max {
 
-#intento1:hover {
-  width: 500px;
-}
+  width: 50%;
+} 
 
 /* ---------- NEXT SEASON ---------- */
 
 /* ---------- TICKETS ---------- */
 
 #tickets {
+
   background-image: url(rsc/img/F1-Abu-Dhabi.jpg);
   color: white;
   backdrop-filter: opacity(80%);
