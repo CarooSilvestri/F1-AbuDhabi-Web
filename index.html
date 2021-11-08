@@ -62,52 +62,32 @@
           </div>
         </div>
 
-        <div class="col-12" id="cuerpo">
+        <div class="col-sm-12" id="cuerpo">
           <!-- VIDEO -->
 
-          <div class="row">
-            <div class="col-12" id="overlay">
+          <div class="row justify-content-center">
+            <div class="col-sm-12" id="overlay">
               <div id="video-inicio"></div>
             </div>
 
-            <div
-              class="
-                d-flex
-                flex-column
-                align-self-center
-                justify-content-center
-              "
-              id="cont-banner"
-            >
-              <img
-                src="rsc/img/logo-race.png"
-                width="20%"
-                alt="logo carrera"
-                class="img-fluid"
-              />
-
-              <button class="btn-dwn-app">Descarga la app</button>
-
-              <div class="cont-text-flecha">
-                <p>Discover</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="arrow"
-                  class="bi bi-arrow-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M 8 2 a 1 0.5 90 0 1 0.5 1 v 23.586 l 3.146 -6.294 a 1 0.5 90 0 1 0.708 1.416 l -4 8 a 1 0.5 90 0 1 -0.708 0 l -4 -8 a 1 0.5 90 0 1 0.708 -1.416 L 7.5 26.586 V 3 A 1 0.5 90 0 1 8 2 z"
-                  />
-                </svg>
+            <div class="col-sm-6 col-md-4 col-lg-3" id="cont-banner"> 
+              <div class="d-flex flex-column">
+                <img src="rsc/img/logo-race.png" width="100%" alt="logo carrera" class="img-fluid" />
+                <button class="btn-dwn-app">Descarga la app</button>
+                <div class="cont-text-flecha">
+                    <a href="#cuenta-regresiva">
+                      <p>Descurbir</p>
+                      <img src="rsc/img/flecha.png" alt="flecha-abajo" width="10%" class="arrow">
+                    </a>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- CUENTA REGRESIVA -->
           <section id="cuenta-regresiva" class="row row-cont justify-content-evenly">
-            <div class="col-8">
+
+            <div class="col-lg-8 col-md-12 col-sm-12">
               <div class="d-flex flex-row justify-content-between">
                 <hr class="align-self-center sep sep-titulo" />
                 <h1>CUENTRA REGRESIVA</h1>
@@ -115,24 +95,24 @@
               </div>
 
               <div class="row justify-content-evenly c-regresiva">
-                <div class="col-2">
+                <div class="col-sm-2 col-md-2 col-lg-2">
                   <p class="elem-momento">DÍAS</p>
                   <p class="typo fecha">00</p>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-2 col-md-2 col-lg-2">
                   <p class="elem-momento">HORAS</p>
                   <p class="typo hora">00</p>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-2 col-md-2 col-lg-2">
                   <p class="elem-momento">MINUTOS</p>
                   <p class="typo minutos">00</p>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-2 col-md-2 col-lg-2">
                   <p class="elem-momento">SEGUNDOS</p>
                   <p class="typo segundos">00</p>
                 </div>
               </div>
-              <hr class="sep sep-final" />
+              <hr class="sep sep-final"/>
             </div>
           </section>
 
@@ -252,7 +232,7 @@
           <div id="votacion" class="row justify-content-center">
             <!-- <h3>Dos candidatos, un solo premio</h3>
             <h1>¿QUIÉN GANARÁ EL CAMPEONATO?</h1> -->
-                <div class="d-flex card-open" id="card-lewis" onmouseenter="open">
+                <div class="d-flex" id="card-lewis" onmouseenter="open">
                     <h1>Lewis Hamilton</h1>
                 </div>
                 <div class="d-flex" id="card-max" style="background: pink;">

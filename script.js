@@ -1,3 +1,26 @@
+$(document).ready(function() {
+
+
+  // Votación
+
+
+  
+
+  $('.acordion').click(function() { 
+
+    if(this.id == 'descargables') {
+      cargar_descargable(prods)
+      return
+    }
+    // prods = document.getElementById("prods")      
+    filtrar(data, this.id, prods)
+    $('.acordion').removeClass("active")
+    $(this).addClass("active")
+  })
+})
+
+var c_lewis = document.getElementById("card-lewis")
+var c_max = document.getElementById("card-max")
 window.onscroll = function () {
   if (
     document.body.scrollTop > 350 ||
@@ -113,17 +136,4 @@ window.addEventListener(`load`, function () {
     ],
   });
 });
-
-// Votación
-
-var c_lewis = document.getElementById("card-lewis")
-var c_max = document.getElementById("card-max")
-
-
-//$( selector ).hover( handlerIn, handlerOut )
-$("#card-lewis").hover(
-  function() {
-    $(this).addClass("open")
-  }
-) 
 

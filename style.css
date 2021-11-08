@@ -1,4 +1,5 @@
 * {
+
   padding: 0;
   margin: 0;
   font-family: "Titillium Web", serif;
@@ -7,6 +8,7 @@
 
 /* FUENTES */
 @font-face {
+
   font-family: "F1-bold";
   src: url(rsc/fonts/F1\ -\ BOLD.woff2) format("woff2"),
     url(rsc/fonts/F1\ -\ BOLD.woff) format("woff");
@@ -15,6 +17,7 @@
 }
 
 @font-face {
+
   font-family: "F1-regular";
   src: url(rsc/fonts/F1\ -\ REGULAR.woff2) format("woff2"),
     url(rsc/fonts/F1\ -\ REGULAR.woff) format("woff");
@@ -23,6 +26,7 @@
 }
 
 @font-face {
+
   font-family: "F1-wide";
   src: url(rsc/fonts/F1\ -\ WIDE.woff2) format("woff2"),
     url(rsc/fonts/F1\ -\ WIDE.woff) format("woff");
@@ -32,12 +36,15 @@
 
 /**/
 ul {
+
   list-style: none;
   text-align: center;
   padding: 0;
 }
 
 h1 {
+
+  font-size: clamp(1.3rem, 2.5vw, 3rem); 
   font-weight: 700;
   text-align: center;
 }
@@ -46,8 +53,15 @@ hr {
   opacity: 1;
 }
 
+a, a:hover {
+  
+  text-decoration: none;
+  color: white;
+}
+
 /* ---------- BARRA ---------- */
 #barra {
+
   padding: 2rem 0;
   background-color: #ba0e0e;
   height: 100vh;
@@ -59,6 +73,7 @@ hr {
 }
 
 .nav-link {
+
   color: white;
   padding: 0 1rem;
   margin: 15% 0;
@@ -77,6 +92,7 @@ hr {
 /* ---------- VIDEO INICIO ---------- */
 
 #video-inicio {
+
   background-image: url(https://media.giphy.com/media/Me61fl1yXTzrSwFKDo/giphy-downsized-large.gif);
   background-color: lightpink;
   background-size: cover;
@@ -89,42 +105,67 @@ hr {
 }
 
 #overlay {
+
   height: 100vh;
   background-color: rgba(0, 0, 0, 1);
   padding: 0;
 }
 
 #cont-banner {
+
   width: 100%;
   position: absolute;
-  align-items: center;
   z-index: 1;
+  height: 100vh;
+  top: 3%
 }
 
 .btn-dwn-app {
+
   background-color: #ba0e0e;
   color: white;
   border: none;
-  padding: 0.5%;
-  margin-top: 3%;
+  padding: 2%;
+  margin: 10% auto;
   font-weight: 500;
   border-radius: 20px;
-  width: 10%;
+  width: 50%;
 }
 
 .cont-text-flecha {
+
   margin-top: 5%;
   color: white;
+  text-align: center;
+  opacity: 0.7;
 }
 
 .cont-text-flecha p {
+  
   font-weight: 500;
 }
 
 .arrow {
+
   opacity: 0.5;
   width: 25px;
   fill: white;
+  animation: bajar_flecha 2s 20;
+  animation-direction: alternate-reverse;
+  position: relative;
+}
+
+@keyframes bajar_flecha {
+
+  0% {
+    top:0;
+    opacity: 0.1;
+  }
+  100% {
+    top: 50px;
+    opacity: 1;
+  }
+  
 }
 
 /* ---------- CUENTA REGRESIVA ---------- */
@@ -151,8 +192,7 @@ hr {
 }
 
 .typo {
-  font-size: 60pt;
-  margin: 0;
+  font-size: clamp(3rem, 5vw, 20rem);
   font-family: "F1-bold";
 }
 
@@ -256,7 +296,7 @@ hr {
 
 .open {
 
-  width: 75%;
+  display: none;
 }
 /*  #card-max:hover  {
 
