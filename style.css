@@ -62,14 +62,18 @@ a, a:hover {
 /* ---------- BARRA ---------- */
 #barra {
 
-  padding: 2rem 0;
-  background-color: #ba0e0e;
   height: 100vh;
+  padding: 2rem 0;
+  width: 0;
+  background-color: #ba0e0e;
   left: 0;
+  top: 0;
   transform-origin: left;
   animation: slide 0.3s;
   width: fit-content;
   display: none;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .nav-link {
@@ -80,15 +84,23 @@ a, a:hover {
   font-weight: 600;
 }
 
+.nav-link:hover, .desq-app {
+
+  color: white;
+}
+
 @keyframes slide {
   0% {
-    transform: scaleX(0);
+    transform: left(0);
   }
   100% {
     transform: scaleX(1);
   }
 }
 
+.dwn {
+  margin: 3%;
+}
 /* ---------- VIDEO INICIO ---------- */
 
 #video-inicio {
@@ -192,6 +204,7 @@ a, a:hover {
 }
 
 .typo {
+
   font-size: clamp(3rem, 5vw, 20rem);
   font-family: "F1-bold";
 }
@@ -234,13 +247,17 @@ a, a:hover {
 
   width: 2px;
   height: 55px;
-  margin-left: 15%;
   color: #ba0e0e;
 }
 
 .info-dia {
 
   font-size: 20px;
+}
+
+.odiovivir {
+
+  width: 100px;
 }
 
 .mes-vertical {
@@ -304,12 +321,11 @@ a, a:hover {
 
   display: none;
 }
-/*  #card-max:hover  {
+#card-max:hover  {
 
   width: 100%;
   transition: all 500ms ease-in-out;
 }
- */
 
 
 /* ---------- NEXT SEASON ---------- */

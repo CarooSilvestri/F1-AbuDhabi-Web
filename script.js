@@ -24,9 +24,10 @@ var c_max = document.getElementById("card-max")
 window.onscroll = function () {
   if (
     document.body.scrollTop > 350 ||
-    document.documentElement.scrollTop > 350
+    document.documentElement.scrollTop > 400
   ) {
     document.getElementById("barra").style.display = "flex";
+
     document.getElementById("cuerpo").className = "col-11";
   } else {
     document.getElementById("barra").style.display = "none";
@@ -34,6 +35,8 @@ window.onscroll = function () {
   }
 };
 
+
+// Cuenta regresiva
 var countDownDate = new Date("Dec 12, 2021 10:00:00").getTime();
 var intervalo = setInterval(function () {
   // Fecha de hoy
@@ -62,6 +65,8 @@ function act_texto(dias, horas, minutos, segundos) {
   numeros[2].innerHTML = minutos;
   numeros[3].innerHTML = segundos;
 }
+
+
 
 // Caroussel
 window.addEventListener(`load`, function () {
@@ -99,6 +104,7 @@ window.addEventListener(`load`, function () {
     ],
   });
 });
+
 
 // Caroussel de tikets
 window.addEventListener(`load`, function () {
