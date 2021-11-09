@@ -65,15 +65,13 @@ a, a:hover {
   height: 100vh;
   padding: 3% 0;
   width: 0;
-  background-color: #ba0e0e;
-  left: 0;
+  background-color: #ba0e0e;  
   top: 0;
   transform-origin: left;
-  animation: slide 0.3s;
+  animation: slide 2s;
   width: fit-content;
   display: none;
-  overflow-x: hidden;
-  transition: 0.5s;
+  overflow-x: hidden; 
 }
 
 #cont-barra {
@@ -95,8 +93,10 @@ a, a:hover {
 }
 
 @keyframes slide {
+
+
   0% {
-    left: 0
+    left: -100px
   }
   100% {
     left: 100px;
@@ -108,6 +108,7 @@ a, a:hover {
 }
 
 #hamburger-icon {
+
   position: fixed;
   top: 28px;
   left: 25px;
@@ -115,8 +116,8 @@ a, a:hover {
   width: 50px;
   cursor: pointer;
   display: block;
-transition: all 1s cubic-bezier(.19, 1, .22, 1)
-
+  transition: all 1s cubic-bezier(.19, 1, .22, 1);
+  z-index: 5;
 }
 
 #hamburger-icon .line {
@@ -130,37 +131,27 @@ transition: all 1s cubic-bezier(.19, 1, .22, 1)
   transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
   -webkit-transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
   -moz-transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
+}
 
-
- }
-
-  #hamburger-icon .line.line-1 {
-    top: 0px;
-  }
-
-  #hamburger-icon .line.line-2 {
-    top: 7px;
-  }
-
-  #hamburger-icon .line.line-3 {
-    top: 14px;
-  }
+#hamburger-icon .line.line-1 { top: 0px; }
+#hamburger-icon .line.line-2 { top: 7px; }
+#hamburger-icon .line.line-3 { top: 14px; }
 
 
 
-  #hamburger-icon.active .line-1 {
-    transform: translateY(7px) translateX(0) rotate(45deg);
-    -webkit-transform: translateY(7px) translateX(0) rotate(45deg);
-    -moz-transform: translateY(7px) translateX(0) rotate(45deg);
-  }
-  #hamburger-icon.active .line-2 {
-    opacity: 0;
-  }
-  #hamburger-icon.active .line-3 {
-    transform: translateY(-7px) translateX(0) rotate(-45deg);
-    -webkit-transform: translateY(-7px) translateX(0) rotate(-45deg);
-    -moz-transform: translateY(-7px) translateX(0) rotate(-45deg);
-  }
+#hamburger-icon.active .line-1 {
+  transform: translateY(7px) translateX(0) rotate(45deg);
+  -webkit-transform: translateY(7px) translateX(0) rotate(45deg);
+  -moz-transform: translateY(7px) translateX(0) rotate(45deg);
+}
+
+#hamburger-icon.active .line-2 { opacity: 0; }
+
+#hamburger-icon.active .line-3 {
+  transform: translateY(-7px) translateX(0) rotate(-45deg);
+  -webkit-transform: translateY(-7px) translateX(0) rotate(-45deg);
+  -moz-transform: translateY(-7px) translateX(0) rotate(-45deg);
+}
 
 nav {
   top: 0;
@@ -170,7 +161,10 @@ nav {
   display: none;
   background: red;
   position: fixed;
+  z-index: 2;
 }
+
+
 /* ---------- VIDEO INICIO ---------- */
 
 #video-inicio {

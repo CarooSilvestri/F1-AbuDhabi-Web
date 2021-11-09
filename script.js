@@ -26,6 +26,7 @@ window.onscroll = function () {
     barra.style.display = "block";
     cuerpo.className = "col-11";
     if ($(window).width() < 960) {
+      barra.style.display = "none";
       cuerpo.className = "col-12";
     }
   } else {
