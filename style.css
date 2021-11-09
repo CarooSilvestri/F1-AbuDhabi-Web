@@ -392,12 +392,15 @@ nav {
 #votacion {
   
   margin: 10% 2% 10% 2%;
+  padding: 5%;
   text-align: center;
   color: white;
-  border-radius: 10px;
-  border: #ba0e0e solid 2px;
   color: black;
-  padding: 5%;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow:  16px 16px 32px #dedede,
+               -16px -16px 32px #ffffff;
+  
 }
 
 #card-lewis, #card-max {
@@ -431,11 +434,6 @@ nav {
 
   width: 100%;
   transition: all 500ms ease-in-out;
-}
-
-#card-lewis::after {
-
-  width: 100%;
 }
 
 @media (max-width: 700px) {

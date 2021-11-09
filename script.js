@@ -14,11 +14,11 @@ $( document ).ready(function() {
 
   $("#card-lewis").click(function() {
 
-    $("#card-lewis").width = "100%"
+    $(this).width = "100%"
     $("#card-max").addClass("d-none") 
   })
 
-  
+
 
   
 });
