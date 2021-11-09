@@ -1,12 +1,26 @@
 $( document ).ready(function() {
   
-  var hamburger = $('#hamburger-icon');
-  var nav = $('nav');
-  hamburger.click(function() {
-    nav.toggle();
+  $('#hamburger-icon').click(function() {
+    $('nav').toggle();
      hamburger.toggleClass('active');
      return false;
   });
+
+  $(".item-menu").click(function(){
+    $('nav').toggle();
+     hamburger.toggleClass('active');
+     return false;
+  })
+
+  $("#card-lewis").click(function() {
+
+    $("#card-lewis").width = "100%"
+    $("#card-max").addClass("d-none") 
+  })
+
+  
+
+  
 });
 
 

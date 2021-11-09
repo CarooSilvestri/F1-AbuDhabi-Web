@@ -1,9 +1,8 @@
 <!-- 
     WEB ABU DHABI F1 - PLATFORMAS OPERATIVAS
     INICIO: 26/10/2021
-    FECHA ACTUAL: 26/10/2021
     VERSION: 1.0
-    ESTADO: EN PROGRESO
+    ESTADO: EN PROGRESO 
 -->
 
 <!DOCTYPE html>
@@ -65,28 +64,29 @@
         </div>
         
         <!-- MENU EN SM -->
-        <div class="col-1 d-block d-sm-none">
-           <nav>
+        <div class="col-1 d-block d-lg-none">
+           <nav class="menu-chico">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a href="#fechas" class="nav-link">FECHAS</a>
+                <a href="#fechas" class="item-menu">FECHAS</a>
               </li>
               <li class="nav-item">
-                <a href="#votacion" class="nav-link">VOTÁ A TU FAVORITO</a>
+                <a href="#votacion" class="item-menu">VOTÁ A TU FAVORITO</a>
               </li>
               <!-- <li class="nav-item">
-                <a href="#" class="nav-link">PRÓXIMA TEMPORADA</a>
+                <a href="#" class="item-menu">PRÓXIMA TEMPORADA</a>
               </li> -->
               <li class="nav-item">
-                <a href="#tickets" class="nav-link">TICKETS</a>
+                <a href="#tickets" class="item-menu">TICKETS</a>
               </li>
             </ul>
            </nav>
-          <a id="hamburger-icon" href="#" title="Menu">
-              <span class="line line-1"></span>
-              <span class="line line-2"></span>
-              <span class="line line-3"></span>
-          </a>
+
+            <a id="hamburger-icon" href="#" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </a>
         </div>
 
         <div class="col-sm-12" id="cuerpo">
@@ -145,73 +145,86 @@
 
           <!-- FECHAS -->
           <div id="fechas" class="row justify-content-center">
-            <div class="col-10 col-md-6 col-md-6">
-              <h1>FECHAS Y HORARIOS</h1>
+            <div class="col-8 col-md-6 col-md-6">
+              <h1 id="tit-fechas">FECHAS Y HORARIOS</h1>
 
               <!--10 DE DICIEMBRE -->
               <div class="row dia align-items-center" data-aos="fade-right">
-                <div class="col-2 col-md-3 col-lg-3">
-
-                  <div class="d-flex odiovivir ">
-                    <p class="mes-vertical">DIC</p>
-                    <p class="num-dia">10</p>
-                    <hr />
-                  </div>
-                  <!-- <div class="d-sm-flex flex-column">
-                    <p>DIC</p>d-md-flex d-none"
-                    <p class="num-dia">10</p>
-                    <hr width="50%"/> 
-                  </div> -->
-
+                <div class="col-12 col-md-3 col-lg-3">
+                    
+                    <div class="d-md-inline-flex d-none">
+                        <p class="mes-vertical">DIC</p>
+                        <p class="num-dia">10</p>
+                        <hr class="sep-large-fecha">
+                    </div>
+                    
+                    <!-- Versión visible solo en SM-->
+                    <div class="d-flex d-md-none flex-column card-chica-fecha">
+                        <h1>10 / Diciembre</h1>
+                        <hr class="sep-fecha">
+                    </div> 
                 </div>
 
-
-                <div class="col-9 col-md-9 col-lg-9 info-dia">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6">Práctica 1</div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">6:30 - 7:30</div>
+                <div class="col-12 col-md-9 col-lg-9 info-dia align-content-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 col-md-6 col-lg-6">Práctica 1</div>
+                    <div class="col-6 col-md-6 col-lg-6">6:30 - 7:30</div>
                   </div>
-                  <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6">Práctica 2</div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">10:00 - 11:00</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 11 DE DICIEMBRE -->
-              <div class="row dia align-items-center" data-aos="fade-right">
-                <div class="col-sm-2 col-md-3 col-lg-3">
-                  <div class="d-flex">
-                    <p class="mes-vertical">DIC</p>
-                    <p class="num-dia">11</p>
-                    <hr />
-                  </div>
-                </div>
-
-                <div class="col-sm-10 col-md-9 col-lg-9 info-dia">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6">Práctica 3</div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">7:00 - 8:00</div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6">Clasificación</div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">10:00 - 11:00</div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 col-md-6 col-lg-6">Práctica 2</div>
+                    <div class="col-6 col-md-6 col-lg-6">10:00 - 11:00</div>
                   </div>
                 </div>
               </div>
+
+            <!-- 11 DE DICIEMBRE -->
+            <div class="row dia align-items-center" data-aos="fade-right">
+                <div class="col-12 col-md-3 col-lg-3">
+                    
+                    <div class="d-md-inline-flex d-none">
+                        <p class="mes-vertical">DIC</p>
+                        <p class="num-dia">11</p>
+                        <hr class="sep-large-fecha">
+                    </div>
+                    
+                    <!-- Versión visible solo en SM-->
+                    <div class="d-flex d-md-none flex-column card-chica-fecha">
+                        <h1>11 / Diciembre</h1>
+                        <hr class="sep-fecha">
+                    </div> 
+                </div>
+
+                <div class="col-12 col-md-9 col-lg-9 info-dia align-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-md-6 col-lg-6">Práctica 3</div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">7:00 - 8:00</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-md-6 col-lg-6">Clasificación</div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">10:00 - 11:00</div>
+                    </div>
+                </div>
+            </div>
 
               <!-- 12 DE DICIEMBRE -->
               <div class="row dia align-items-center" data-aos="fade-right">
-                <div class="col-sm-2 col-md-3 col-lg-3">
-                  <div class="d-flex">
-                    <p class="mes-vertical">DIC</p>
-                    <p class="num-dia">12</p>
-                    <hr />
-                  </div>
+                <div class="col-12 col-md-3 col-lg-3">
+                    
+                    <div class="d-md-inline-flex d-none">
+                        <p class="mes-vertical">DIC</p>
+                        <p class="num-dia">12</p>
+                        <hr class="sep-large-fecha">
+                    </div>
+                    
+                    <!-- Versión visible solo en SM-->
+                    <div class="d-flex d-md-none flex-column card-chica-fecha">
+                        <h1>12 / Diciembre</h1>
+                        <hr class="sep-fecha">
+                    </div> 
                 </div>
 
-                <div class="col-9 info-dia">
-                  <div class="row">
+                <div class="col-12 col-md-9 col-lg-9 info-dia align-content-center">
+                  <div class="row justify-content-center">
                     <div class="col-6 dia-carrera">Carrera</div>
                     <div class="col-6 dia-carrera">10:00</div>
                   </div>
@@ -222,11 +235,7 @@
 
           <!-- SINTONIZACIÓN -->
           <div id="sintonizacion" class="row justify-content-center">
-            <div
-              class="col-10 align-items-center"
-              id="sint"
-              data-aos="fade-right"
-            >
+            <div class="col-10 align-items-center" id="sint" data-aos="fade-right">
               <div class="" id="tit-sint">
                 <h5><b>Ubiación</b>: Argentina</h5>
                 <h1>PARA VER LA CARRERA SINTONIZÁ</h1>
