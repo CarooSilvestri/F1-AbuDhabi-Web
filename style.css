@@ -63,7 +63,7 @@ a, a:hover {
 #barra {
 
   height: 100vh;
-  padding: 2rem 0;
+  padding: 3% 0;
   width: 0;
   background-color: #ba0e0e;
   left: 0;
@@ -74,6 +74,11 @@ a, a:hover {
   display: none;
   overflow-x: hidden;
   transition: 0.5s;
+}
+
+#cont-barra {
+
+  height: 100%; 
 }
 
 .nav-link {
@@ -91,15 +96,80 @@ a, a:hover {
 
 @keyframes slide {
   0% {
-    transform: left(0);
+    left: 0
   }
   100% {
-    transform: scaleX(1);
+    left: 100px;
   }
 }
 
 .dwn {
   margin: 3%;
+}
+
+#hamburger-icon {
+  position: fixed;
+  top: 28px;
+  left: 25px;
+  height: 27px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+transition: all 1s cubic-bezier(.19, 1, .22, 1)
+
+}
+
+#hamburger-icon .line {
+
+  position: absolute;
+  display: block;
+  background: rgb(0, 0, 0);
+  width: 22px;
+  height: 2px;
+  left: 0;
+  transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
+  -webkit-transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
+  -moz-transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
+
+
+ }
+
+  #hamburger-icon .line.line-1 {
+    top: 0px;
+  }
+
+  #hamburger-icon .line.line-2 {
+    top: 7px;
+  }
+
+  #hamburger-icon .line.line-3 {
+    top: 14px;
+  }
+
+
+
+  #hamburger-icon.active .line-1 {
+    transform: translateY(7px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(7px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(7px) translateX(0) rotate(45deg);
+  }
+  #hamburger-icon.active .line-2 {
+    opacity: 0;
+  }
+  #hamburger-icon.active .line-3 {
+    transform: translateY(-7px) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-7px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-7px) translateX(0) rotate(-45deg);
+  }
+
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: red;
+  position: fixed;
 }
 /* ---------- VIDEO INICIO ---------- */
 
@@ -299,16 +369,26 @@ a, a:hover {
   
   margin: 10% 2% 10% 2%;
   text-align: center;
-  background-color: black;
   color: white;
-  height: 80vh;
   border-radius: 10px;
+  border: #ba0e0e solid 2px;
+  color: black;
+  padding: 5%;
 }
 
 #card-lewis, #card-max {
 
   width: 50%;
+  height: 600px;
+  margin: 5% auto;
 } 
+
+#card-lewis h1, #card-max h1 {
+
+  margin-top: 5%;
+  font-size: clamp(1.5rem, 2vw, 5rem);
+  color: white;
+}
 
 #card-lewis {
 
@@ -317,16 +397,26 @@ a, a:hover {
   background-size: cover;
 }
 
-.open {
+#card-max {
 
-  display: none;
+  background-image: url(rsc/img/Max-Verstappen-1.jpg);
+  background-size: cover;
 }
-#card-max:hover  {
+
+#card-lewis:hover, #card-max:hover  {
 
   width: 100%;
   transition: all 500ms ease-in-out;
 }
 
+@media (max-width: 700px) {
+  #card-lewis, #card-max {
+
+    width: 50%;
+    height: 300px;
+  } 
+  
+}
 
 /* ---------- NEXT SEASON ---------- */
 

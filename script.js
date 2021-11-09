@@ -1,37 +1,36 @@
-$(document).ready(function() {
-
-
-  // Votación
-
-
+$( document ).ready(function() {
   
+  var hamburger = $('#hamburger-icon');
+  var nav = $('nav');
+  hamburger.click(function() {
+    nav.toggle();
+     hamburger.toggleClass('active');
+     return false;
+  });
+});
 
-  $('.acordion').click(function() { 
 
-    if(this.id == 'descargables') {
-      cargar_descargable(prods)
-      return
-    }
-    // prods = document.getElementById("prods")      
-    filtrar(data, this.id, prods)
-    $('.acordion').removeClass("active")
-    $(this).addClass("active")
-  })
-})
 
-var c_lewis = document.getElementById("card-lewis")
-var c_max = document.getElementById("card-max")
+
+// Barra lateral
 window.onscroll = function () {
-  if (
-    document.body.scrollTop > 350 ||
-    document.documentElement.scrollTop > 400
-  ) {
-    document.getElementById("barra").style.display = "flex";
 
-    document.getElementById("cuerpo").className = "col-11";
+  var barra = document.getElementById("barra")
+  var cuerpo = document.getElementById("cuerpo")
+
+  if (
+    document.body.scrollTop > 700  ||
+    document.documentElement.scrollTop > 700
+  ) {
+    
+    barra.style.display = "block";
+    cuerpo.className = "col-11";
+    if ($(window).width() < 960) {
+      cuerpo.className = "col-12";
+    }
   } else {
-    document.getElementById("barra").style.display = "none";
-    document.getElementById("cuerpo").className = "col-12";
+    barra.style.display = "none";
+    cuerpo.className = "col-12";
   }
 };
 
