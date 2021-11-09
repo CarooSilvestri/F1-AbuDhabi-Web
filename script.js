@@ -15,6 +15,7 @@ $( document ).ready(function() {
   $("#card-lewis").click(function() {
 
     $(this).width = "100%"
+    $(this).appe
     $("#card-max").addClass("d-none") 
   })
 

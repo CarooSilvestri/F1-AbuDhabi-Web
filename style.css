@@ -67,8 +67,9 @@ a, a:hover {
   width: 0;
   background-color: #ba0e0e;  
   top: 0;
-  transform-origin: left;
-  animation: slide 2s;
+  left: 0;
+  /* transform-origin: left;
+  animation: slide 2s; */
   width: fit-content;
   display: none;
   overflow-x: hidden; 
@@ -92,16 +93,16 @@ a, a:hover {
   color: white;
 }
 
-@keyframes slide {
+/* @keyframes slide {
 
 
   0% {
-    left: -100px
+    left: 0
   }
   100% {
     left: 100px;
   }
-}
+} */
 
 .dwn {
   margin: 3%;
@@ -325,6 +326,7 @@ nav {
   width: 2px;
   height: 55px;
   color: #ba0e0e;
+  margin-left: 3%;
 }
 
 .info-dia {
@@ -400,7 +402,7 @@ nav {
   background: #ffffff;
   box-shadow:  16px 16px 32px #dedede,
                -16px -16px 32px #ffffff;
-  
+
 }
 
 #card-lewis, #card-max {
