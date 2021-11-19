@@ -67,6 +67,7 @@ a, a:hover {
   left: 0;
   height: 100vh;
   padding: 1%;
+  display: none;
   width: 130px;
   /* transform-origin: left;
   animation: slide 2s; */
@@ -315,6 +316,11 @@ nav {
   margin-bottom: 10%;
 }
 
+.dia p {
+  
+  margin-bottom: 0;
+}
+
 .num-dia {
 
   font-size: 50px;
@@ -335,6 +341,7 @@ nav {
 }
 
 .mes-vertical {
+
   margin: 0;
   text-align: center;
   writing-mode: vertical-lr;
@@ -343,6 +350,7 @@ nav {
 }
 
 .dia-carrera {
+  
   font-size: 25px;
 }
 
@@ -398,10 +406,10 @@ nav {
   text-align: center;
   color: white;
   color: black;
-  border-radius: 10px;
+  /* border-radius: 10px;
   background: #ffffff;
   box-shadow:  16px 16px 32px #dedede,
-               -16px -16px 32px #ffffff;
+               -16px -16px 32px #ffffff; */
 
 }
 
