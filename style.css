@@ -449,6 +449,15 @@ nav {
 
 /* ---------- NEXT SEASON ---------- */
 
+#prox-temp {
+
+  background-image: url(rsc/img/F1\ 2022.jpg);
+  background-size: cover;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  height: 500px;
+}
+
 /* ---------- TICKETS ---------- */
 
 #tickets {
@@ -509,9 +518,13 @@ nav {
 
 #sponsors {
 
-  margin: 0 5% 5% 5%;
+  margin: 10% 5% 10% 5%;
 }
 
+#sponsors h1 {
+
+  margin-bottom: 3%;
+}
 .carousel__contenedor {
 
   position: relative;
@@ -536,6 +549,11 @@ nav {
   right: -10px;
 }
 
+.carousel__lista {
+
+  height: 200px;
+}
+
 .carousel__elemento {
 
   text-align: center;
@@ -551,6 +569,7 @@ footer {
 }
 
 #cont-footer {
+
   padding: 7%;
 }
 
