@@ -28,7 +28,7 @@ $( document ).ready(function() {
 
 
 // Barra lateral
-window.onscroll = function () {
+/* window.onscroll = function () {
 
   var barra = document.getElementById("barra")
   var cuerpo = document.getElementById("cuerpo")
@@ -48,7 +48,7 @@ window.onscroll = function () {
     barra.style.display = "none";
     cuerpo.className = "col-12";
   }
-};
+}; */
 
 
 // Cuenta regresiva

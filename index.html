@@ -35,63 +35,9 @@
     <div class="container-fluid">
 
       <div class="row">
-        <!-- BARRA / MENÚ -->
-        <div class="col-1 align-items-center sticky-top flex-column justify-content-between" id="barra" data-aos="fade-in" >
-            <a href="#">
-              <img src="rsc/img/logo-race.png" class="img-fluid" alt="logo carrera"/>
-            </a>
-
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a href="#fechas" class="nav-link">FECHAS</a>
-              </li>
-              <li class="nav-item">
-                <a href="#votacion" class="nav-link">VOTÁ A TU FAVORITO</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a href="#" class="nav-link">PRÓXIMA TEMPORADA</a>
-              </li> -->
-              <li class="nav-item">
-                <a href="#tickets" class="nav-link">TICKETS</a>
-              </li>
-            </ul>
-
-            <div class="d-flex flex-column align-items-center">
-              <p class="desq-app">Descarga la app</p>
-              <img src="rsc/img/google-play-badge.png" width="80%" alt="google-badge" class="img-fluid dwn"/>
-              <img src="rsc/img/app-store-badge.svg" width="80%" alt="app-store-badge" class="img-fluid dwn"/>
-            </div>
-        </div>
-        
-        <!-- MENU EN SM -->
-        <div class="col-1 d-block d-lg-none">
-           <nav class="menu-chico">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a href="#fechas" class="item-menu">FECHAS</a>
-              </li>
-              <li class="nav-item">
-                <a href="#votacion" class="item-menu">VOTÁ A TU FAVORITO</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a href="#" class="item-menu">PRÓXIMA TEMPORADA</a>
-              </li> -->
-              <li class="nav-item">
-                <a href="#tickets" class="item-menu">TICKETS</a>
-              </li>
-            </ul>
-           </nav>
-
-            <a id="hamburger-icon" href="#" title="Menu">
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-                <span class="line line-3"></span>
-            </a>
-        </div>
-
-        <div class="col-sm-12" id="cuerpo">
-          <!-- VIDEO -->
-
+      
+        <!-- VIDEO -->
+        <div class="col-sm-12">
           <div class="row justify-content-center">
             <div class="col-sm-12" id="overlay">
               <div id="video-inicio"></div>
@@ -110,7 +56,63 @@
               </div>
             </div>
           </div>
+        </div>
 
+
+        <!-- BARRA / MENÚ -->
+            <div class="d-flex flex-column sticky-top" id="barra">
+              
+                <a href="#" class="d-flex align-items-center mb-auto">
+                  <img src="rsc/img/logo-race.png" class="img-fluid" width="100%" alt="logo carrera"/>
+                </a>
+
+                <div class="flex-column mb-auto">
+                  <ul>
+                    <li class="nav-option"><a href="#fechas">FECHAS</a></li>
+                    <li class="nav-option"><a href="#votacion">VOTÁ QUIEN GANARÁ</a></li>
+                    <li class="nav-option"><a href="#">PRÓXIMA TEMPORADA</a></li>
+                    <li class="nav-option"><a href="#tickets">TICKETS</a></li>
+                  </ul>
+                </div>
+
+                <div class="d-flex flex-column align-bottom">
+                  <p class="desq-app">Descarga la app</p>
+                  <img src="rsc/img/google-play-badge.png" width="100%" alt="google-badge" class="img-fluid dwn"/>
+                  <img src="rsc/img/app-store-badge.svg" width="100%" alt="app-store-badge" class="img-fluid dwn"/>
+                </div>
+            </div>
+        
+        <div class="col-sm-12" id="cuerpo">
+
+           
+        
+          <!-- MENU EN SM -->
+         <div class="col-1 d-block d-lg-none">
+            <nav class="menu-chico">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#fechas" class="item-menu">FECHAS</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#votacion" class="item-menu">VOTÁ A TU FAVORITO</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="item-menu">PRÓXIMA TEMPORADA</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#tickets" class="item-menu">TICKETS</a>
+                </li>
+              </ul>
+            </nav>
+
+              <a id="hamburger-icon" href="#" title="Menu">
+                  <span class="line line-1"></span>
+                  <span class="line line-2"></span>
+                  <span class="line line-3"></span>
+              </a>
+          </div> 
+          
+          <div class="col-sm-11 offset-sm-1">
           <!-- CUENTA REGRESIVA -->
           <section id="cuenta-regresiva" class="row row-cont justify-content-evenly">
 
@@ -235,7 +237,7 @@
 
           <!-- SINTONIZACIÓN -->
           <div id="sintonizacion" class="row justify-content-center">
-            <div class="col-10 align-items-center" id="sint" data-aos="fade-right">
+            <div class="col-8 align-items-center" id="sint" data-aos="fade-right">
               <div class="" id="tit-sint">
                 <h5><b>Ubiación</b>: Argentina</h5>
                 <h1>PARA VER LA CARRERA SINTONIZÁ</h1>
@@ -370,7 +372,10 @@
           </div>
 
           <!-- PROXIMA TEMPORADA -->
-          <!-- jejej nos vemos en la proxima entrega! -->
+          <div id="prox-temp" class="row">
+
+
+          </div>
 
           <!-- SPONSORS -->
           <div id="sponsors" class="row">
@@ -483,7 +488,7 @@
               </div>
             </div>
           </div>
-          
+        </div>
         </div>
 
         <div class="col-sm-6 col-md-3 col-lg-3">

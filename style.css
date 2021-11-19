@@ -62,33 +62,25 @@ a, a:hover {
 /* ---------- BARRA ---------- */
 #barra {
 
-  height: 100vh;
-  padding: 3% 0;
-  width: 0;
   background-color: #ba0e0e;  
   top: 0;
   left: 0;
+  height: 100vh;
+  padding: 1%;
+  width: 130px;
   /* transform-origin: left;
   animation: slide 2s; */
-  width: fit-content;
-  display: none;
-  overflow-x: hidden; 
 }
 
-#cont-barra {
-
-  height: 100%; 
-}
-
-.nav-link {
+.nav-option {
 
   color: white;
-  padding: 0 1rem;
-  margin: 15% 0;
-  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 30%;
+  text-align: center;
 }
 
-.nav-link:hover, .desq-app {
+.nav-option:hover, .desq-app {
 
   color: white;
 }
@@ -504,7 +496,7 @@ nav {
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: none;
-  
+
 }
 
 .btn-buy:hover {
