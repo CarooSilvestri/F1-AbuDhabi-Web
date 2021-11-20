@@ -479,11 +479,13 @@ nav {
 }
 
 .num-vot {
+  margin: 0;
   font-size: clamp(50px, 10vw, 200px);
 }
 
 #voto-hecho h4 {
 
+  margin: 0;
   font-size: clamp(15px, 2vw, 60px);
 }
 /* ---------- NEXT SEASON ---------- */
@@ -492,17 +494,65 @@ nav {
 
   padding: 5%;
   margin-bottom: 7%;
-  height: 800px;
+  height: 100vh;
+  background: #212121;
 }
 
-.fondo-auto {
+.C-carousel {
+  
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
+#C-track {
+
+  height: 100%;
+  opacity: 1;
+  transition: all 400ms ease; 
+}
+
+.C-track--reinit {
+  
+  opacity: 0;
+  transition: all 0ms linear;
+}
+
+.C-slide {
+
+  height: 100%;
+  width: 100%;
+  color: #fff;
   background-image: url(rsc/img/F1\ 2022.jpg);
+  background-position: center;
   background-size: cover;
-  margin-top: 7%;
-  border-radius: 10px;
+  background-blend-mode: overlay;
+  overflow: hidden;
 }
 
+.C-navigation {
+
+  position: absolute;
+  top:0;
+  height: 100%;
+  z-index: 2;
+}
+
+.C-navigation__dot {
+
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  margin: 50%;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.C-navigation__dot:active {
+
+  background: red;
+  transform: scale(1.3);
+}
 
 
 /* ---------- TICKETS ---------- */

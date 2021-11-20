@@ -42,11 +42,15 @@ $( document ).ready(function() {
     text.innerHTML= "de las personas votaron por " + corredor 
 
     var puntos =document.createElement("h1")
-    puntos.innerHTML= puntos_corredor + " pts."
+    puntos.innerHTML= "Puntos del campeonato: " +  puntos_corredor + " pts."
 
     $("#voto-hecho").append(elect, stats, text, puntos)
     $("#voto-hecho").addClass("d-block")
   }
+
+
+  
+
 });
 
 

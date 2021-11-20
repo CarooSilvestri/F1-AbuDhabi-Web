@@ -1,8 +1,8 @@
 <!-- 
     WEB ABU DHABI F1 - PLATFORMAS OPERATIVAS
     INICIO: 26/10/2021
-    VERSION: 1.0
-    ESTADO: EN PROGRESO 
+    VERSION: 1.5
+    ESTADO: CASI TERMINADO 20/11
 -->
 
 <!DOCTYPE html>
@@ -371,17 +371,23 @@
           <!-- PROXIMA TEMPORADA -->
           <div id="prox-temp" class="row">  
 
-            <div class="C-carrousel">
+            <div class="col-sm-12 C-carousel C-carousel--vertical" id="car-act">
+              
+              <div id="C-track">
+                <div class="C-slide d-flex flex-column align-items-center justify-content-center">hola!</div>
+                <div class="C-slide d-flex flex-column align-items-center justify-content-center">hola!</div>
+                <div class="C-slide d-flex flex-column align-items-center justify-content-center">hola!</div>
+                <div class="C-slide d-flex flex-column align-items-center justify-content-center">hola!</div>
+              </div>
 
-              <div class="C-slide">hola!</div>
-              <div class="C-slide">hola!</div>
-              <div class="C-slide">hola!</div>
-              <div class="C-slide">hola!</div>
-            </div>
-            <div class="fondo-auto">
-
-            </div>
-
+              <div class="d-flex flex-column justify-content-center C-navigation">
+                <div class="C-navigation__dot active" data-slideindex="0"></div>
+                <div class="C-navigation__dot" data-slideindex="1"></div>
+                <div class="C-navigation__dot" data-slideindex="2"></div>
+                <div class="C-navigation__dot" data-slideindex="3"></div>
+                <div class="C-navigation__dot" data-slideindex="4"></div>
+              </div>
+            </div>  
           </div>
 
           <!-- SPONSORS -->
@@ -512,6 +518,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
     <script src="script.js"></script>
+    <!-- <script type="text/babel" src="Carousel.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
     
   </body>
