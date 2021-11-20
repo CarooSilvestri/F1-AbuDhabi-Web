@@ -14,14 +14,10 @@ $( document ).ready(function() {
 
   $("#card-lewis").click(function() {
 
-    $(this).width = "100%"
-    $(this).appe
+    console.log("hola")
+    $(this).height = "400px"
     $("#card-max").addClass("d-none") 
   })
-
-
-
-  
 });
 
 
