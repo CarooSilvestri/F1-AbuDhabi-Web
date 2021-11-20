@@ -12,12 +12,41 @@ $( document ).ready(function() {
      return false;
   })
 
+  // ANIMACION CARDS
   $("#card-lewis").click(function() {
 
-    console.log("hola")
-    $(this).height = "400px"
-    $("#card-max").addClass("d-none") 
+    $(this).animate({"height": "100%"}, "slow", "swing")
+    $("#card-max").addClass("d-sm-none") 
+    crear_res_poll("56%", "Lewis", "318.5")
   })
+
+  $("#card-max").click(function() {
+
+    $(this).animate({"height": '100%'},"slow","swing")
+    $("#card-lewis").addClass("d-sm-none") 
+    crear_res_poll("44%", "Max", "332,5")    
+  })
+
+  function crear_res_poll(cantidad, corredor, puntos_corredor) {
+
+    document.getElementById("voto-hecho").innerHTML = ""
+
+    var elect = document.createElement("h4")
+    elect.innerHTML = "Tu elección: <b>" + corredor + "</b>"
+
+    var stats = document.createElement("h1")
+    stats.setAttribute("class", "num-vot")
+    stats.innerHTML= cantidad
+
+    var text = document.createElement("h4")
+    text.innerHTML= "de las personas votaron por " + corredor 
+
+    var puntos =document.createElement("h1")
+    puntos.innerHTML= puntos_corredor + " pts."
+
+    $("#voto-hecho").append(elect, stats, text, puntos)
+    $("#voto-hecho").addClass("d-block")
+  }
 });
 
 

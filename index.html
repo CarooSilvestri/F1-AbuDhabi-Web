@@ -60,7 +60,7 @@
       
       <!-- BARRA / MENÚ -->
        
-        <div class="d-flex flex-column sticky-top" id="barra">
+        <div class="d-none flex-column sticky-top d-sm-none d-md-flex" id="barra">
               
           <a href="#" class="d-flex align-items-center mb-auto">
             <img src="rsc/img/logo-race.png" class="img-fluid" width="100%" alt="logo carrera"/>
@@ -269,10 +269,11 @@
 
             <div class="d-flex">
 
-              <div class="d-flex flex-column vot-tit align-self-center">
+              <div class="d-flex flex-column vot-tit align-self-center" id="div-tit">
                 <h3>Dos candidatos, un solo premio</h3>
                 <br>
                 <h1>¿QUIÉN GANARÁ EL CAMPEONATO?</h1>
+                <div id="voto-hecho" class="d-none"></div>
               </div>
 
               <div class="d-flex flex-column vot-cards align-self-center">

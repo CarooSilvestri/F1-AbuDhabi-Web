@@ -404,7 +404,7 @@ nav {
   margin: 10% 0 10% 0;
   text-align: center;
   color: white;
-  background-color: black;
+  background-color: #1a1919;
   height: 100vh;
   padding: 3% 0 3% 0;
 }
@@ -467,8 +467,25 @@ nav {
   display: block;
 }
 
+#voto-hecho {
 
+  height: 50%;
+  margin-top: 5%;
+  padding: 4%;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #1c1b1b, #171717);
+  box-shadow:  27px 27px 54px #0e0d0d,
+               -27px -27px 54px #262525;
+}
 
+.num-vot {
+  font-size: clamp(50px, 10vw, 200px);
+}
+
+#voto-hecho h4 {
+
+  font-size: clamp(15px, 2vw, 60px);
+}
 /* ---------- NEXT SEASON ---------- */
 
 #prox-temp {
