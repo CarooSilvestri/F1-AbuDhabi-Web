@@ -492,7 +492,6 @@ nav {
 
 #prox-temp {
 
-  padding: 5%;
   margin-bottom: 7%;
   height: 100vh;
 }
@@ -500,8 +499,8 @@ nav {
 .C-carousel {
   
   height: 100%;
-  overflow: hidden;
-  position: relative;
+  padding: 0;
+  width: 100%;
 }
 
 #C-track {
@@ -517,7 +516,7 @@ nav {
 
 .C-slide {
 
-  padding: 3%;
+  padding: 5%;
   height: 100%;
   width: 100%;
   color: black;
@@ -544,13 +543,30 @@ nav {
 
 .info-auto p {
   
-  font-size: 10pt;
+  font-size: clamp(10pt, 2vw, 12pt );
+}
+
+.slide-3 h1{
+
+  width: 30%;
+  margin: 2%;
+}
+
+.slide-3 p {
+
+  width: 50%;
+}
+
+.slide-4 {
+  
+  width: 70%;
 }
 
 .C-navigation {
 
   position: absolute;
   top:0;
+  margin-left: 2%;
   height: 100%;
   z-index: 2;
 }
@@ -563,6 +579,7 @@ nav {
   margin: 50%;
   cursor: pointer;
   border-radius: 50%;
+  padding-left: 4%;
 }
 
 .C-navigation__dot:hover, .C-navigation__dot:active {

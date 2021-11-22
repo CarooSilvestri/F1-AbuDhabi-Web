@@ -60,8 +60,6 @@ $( document ).ready(function() {
     $(".C-slide").addClass("d-none")
     var elem = act_elem[$(this).data('slideindex')]
     elem.classList.add("d-flex")
-   // elem.classList.add("animate")
-
   });
 });
 
