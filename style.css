@@ -558,8 +558,24 @@ nav {
 }
 
 .slide-4 {
+
+  text-align: left;
+}
+
+.slide-4 {
   
   width: 70%;
+} 
+
+.slide-5 {
+
+  width: 100%;
+  text-align: right;
+}
+
+.cont {
+  
+  width: 75%;
 }
 
 .C-navigation {
