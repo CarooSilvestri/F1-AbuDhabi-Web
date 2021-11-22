@@ -495,7 +495,6 @@ nav {
   padding: 5%;
   margin-bottom: 7%;
   height: 100vh;
-  background: #212121;
 }
 
 .C-carousel {
@@ -510,7 +509,6 @@ nav {
   height: 100%;
   opacity: 1;
   transition: all 400ms ease; 
-  color: #fff;
   background-image: url(rsc/img/F1\ 2022.jpg);
   background-position: center;
   background-size: cover;
@@ -519,9 +517,34 @@ nav {
 
 .C-slide {
 
+  padding: 3%;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  color: black;
+  animation: crecer 1s ease-in-out; 
+}
+
+.contenido {
+
+  width: 100%;
+  height: 100%;
+}
+
+.info-auto {
+  
+  width: 35%;
+  margin: 2%;
+  height: 20%;
+}
+
+@keyframes crecer {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+.info-auto p {
+  
+  font-size: 10pt;
 }
 
 .C-navigation {
@@ -542,7 +565,7 @@ nav {
   border-radius: 50%;
 }
 
-.C-navigation__dot:active {
+.C-navigation__dot:hover, .C-navigation__dot:active {
 
   background: red;
   transform: scale(1.3);

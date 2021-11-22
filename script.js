@@ -48,19 +48,19 @@ $( document ).ready(function() {
     $("#voto-hecho").addClass("d-block")
   }
 
-
+  
+  // Manual slider
   $('.C-navigation__dot').click(function() { 
 
     $('.C-navigation__dot').removeClass("active")
-
-
     $(this).addClass("active")
 
-    var a = document.querySelectorAll('.C-slide')
-
+    var act_elem = document.querySelectorAll('.C-slide')
     $(".C-slide").removeClass("d-flex")
-    a[$(this).data('slideindex')].classList.add("d-flex")
-
+    $(".C-slide").addClass("d-none")
+    var elem = act_elem[$(this).data('slideindex')]
+    elem.classList.add("d-flex")
+   // elem.classList.add("animate")
 
   });
 });
