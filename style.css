@@ -510,23 +510,17 @@ nav {
   height: 100%;
   opacity: 1;
   transition: all 400ms ease; 
-}
-
-.C-track--reinit {
-  
-  opacity: 0;
-  transition: all 0ms linear;
+  color: #fff;
+  background-image: url(rsc/img/F1\ 2022.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
 }
 
 .C-slide {
 
   height: 100%;
   width: 100%;
-  color: #fff;
-  background-image: url(rsc/img/F1\ 2022.jpg);
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: overlay;
   overflow: hidden;
 }
 

@@ -41,7 +41,7 @@ $( document ).ready(function() {
     var text = document.createElement("h4")
     text.innerHTML= "de las personas votaron por " + corredor 
 
-    var puntos =document.createElement("h1")
+    var puntos = document.createElement("h1")
     puntos.innerHTML= "Puntos del campeonato: " +  puntos_corredor + " pts."
 
     $("#voto-hecho").append(elect, stats, text, puntos)
@@ -49,35 +49,21 @@ $( document ).ready(function() {
   }
 
 
-  
+  $('.C-navigation__dot').click(function() { 
 
+    $('.C-navigation__dot').removeClass("active")
+
+
+    $(this).addClass("active")
+
+    var a = document.querySelectorAll('.C-slide')
+
+    $(".C-slide").removeClass("d-flex")
+    a[$(this).data('slideindex')].classList.add("d-flex")
+
+
+  });
 });
-
-
-
-
-// Barra lateral
-/* window.onscroll = function () {
-
-  var barra = document.getElementById("barra")
-  var cuerpo = document.getElementById("cuerpo")
-
-  if (
-    document.body.scrollTop > 700  ||
-    document.documentElement.scrollTop > 700
-  ) {
-    
-    barra.style.display = "block";
-    cuerpo.className = "col-11";
-    if ($(window).width() < 960) {
-      barra.style.display = "none";
-      cuerpo.className = "col-12";
-    }
-  } else {
-    barra.style.display = "none";
-    cuerpo.className = "col-12";
-  }
-}; */
 
 
 // Cuenta regresiva
