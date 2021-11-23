@@ -407,12 +407,6 @@ nav {
   padding: 3% 0 3% 0;
 }
 
-.vot-tit {
-
-  width: 40%;
-  margin: 3%;
-}
-
 .vot-cards {
 
   width: 60%;  
@@ -478,7 +472,7 @@ nav {
 
 .num-vot {
   margin: 0;
-  font-size: clamp(50px, 10vw, 200px);
+  font-size: clamp(50pt, 10vw, 200pt);
 }
 
 #voto-hecho h4 {
@@ -486,6 +480,8 @@ nav {
   margin: 0;
   font-size: clamp(15px, 2vw, 60px);
 }
+
+
 /* ---------- NEXT SEASON ---------- */
 
 #prox-temp {

@@ -41,8 +41,8 @@ $( document ).ready(function() {
     var text = document.createElement("h4")
     text.innerHTML= "de las personas votaron por " + corredor 
 
-    var puntos = document.createElement("h1")
-    puntos.innerHTML= "Puntos del campeonato: " +  puntos_corredor + " pts."
+    var puntos = document.createElement("h4")
+    puntos.innerHTML= "Puntos del campeonato: <b>" +  puntos_corredor + " pts.</b>"
 
     $("#voto-hecho").append(elect, stats, text, puntos)
     $("#voto-hecho").addClass("d-block")
