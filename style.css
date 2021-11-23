@@ -67,10 +67,7 @@ a, a:hover {
   left: 0;
   height: 100vh;
   padding: 1%;
-  display: none;
   width: 130px;
-  /* transform-origin: left;
-  animation: slide 2s; */
 }
 
 .nav-option {
@@ -85,17 +82,6 @@ a, a:hover {
 
   color: white;
 }
-
-/* @keyframes slide {
-
-
-  0% {
-    left: 0
-  }
-  100% {
-    left: 100px;
-  }
-} */
 
 .desq-app {
 
@@ -384,8 +370,7 @@ nav {
 
 @media (max-width:1250px) {
   .sep-large-fecha {
-    padding: 0;
-    margin-left: 0;
+    display: none;
   }
 }
 
@@ -703,8 +688,7 @@ nav {
   position: relative;
 }
 
-.carousel__anterior,
-.carousel__siguiente {
+.carousel__anterior, .carousel__siguiente {
   position: absolute;
   display: block;
   border: none;
@@ -764,11 +748,14 @@ footer {
   margin-top: 4%;
 }
 
-.desc-buttons img {
+.desc-buttons a {
 
   margin: 3%;
   margin-left: 10%;
+  width: 40%;
 }
+
+
 
 .p-fecha {
 
